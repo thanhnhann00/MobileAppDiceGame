@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Simple Dice Roller</string>
+    <string-array name="navigation_drawer_items_array">
+        <item>Dice History</item>
+        <item>Select Dice</item>
+    </string-array>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "144850464096",
+    "project_id": "dice-mobile-app",
+    "storage_bucket": "dice-mobile-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144850464096:android:e29381eeddb99fd1454205",
+        "android_client_info": {
+          "package_name": "com.example.dicerollapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOamVaI9NO88Ftu-jZH_XOSJqrj-5IP_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
