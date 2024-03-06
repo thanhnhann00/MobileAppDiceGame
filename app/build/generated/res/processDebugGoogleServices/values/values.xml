@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">144850464096</string>
+    <string name="google_api_key" translatable="false">AIzaSyAOamVaI9NO88Ftu-jZH_XOSJqrj-5IP_U</string>
+    <string name="google_app_id" translatable="false">1:144850464096:android:e29381eeddb99fd1454205</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAOamVaI9NO88Ftu-jZH_XOSJqrj-5IP_U</string>
+    <string name="google_storage_bucket" translatable="false">dice-mobile-app.appspot.com</string>
+    <string name="project_id" translatable="false">dice-mobile-app</string>
+</resources>
