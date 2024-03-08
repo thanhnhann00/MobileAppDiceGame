@@ -1,154 +1,170 @@
 [
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/layout_activity_main.xml.flat",
-        "source": "com.example.dicerollapp-main-41:/layout/activity_main.xml"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\drawable_d5.png.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\drawable\\d5.png"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/drawable_rolling_dice_background.xml.flat",
-        "source": "com.example.dicerollapp-main-41:/drawable/rolling_dice_background.xml"
+        "merged": "com.example.dicerollapp-merged_res-39:/drawable_dice.png.flat",
+        "source": "com.example.dicerollapp-main-41:/drawable/dice.png"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.dicerollapp-main-41:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/layout_activity_create_account.xml.flat",
-        "source": "com.example.dicerollapp-main-41:/layout/activity_create_account.xml"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.dicerollapp-main-41:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/drawable_d4.png.flat",
-        "source": "com.example.dicerollapp-main-41:/drawable/d4.png"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/xml_backup_rules.xml.flat",
-        "source": "com.example.dicerollapp-main-41:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.dicerollapp-main-41:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\drawable_d1.png.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\drawable\\d1.png"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/drawable_d2.png.flat",
-        "source": "com.example.dicerollapp-main-41:/drawable/d2.png"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/layout_fragment_login.xml.flat",
-        "source": "com.example.dicerollapp-main-41:/layout/fragment_login.xml"
+        "merged": "com.example.dicerollapp-merged_res-39:/layout_fragment_dice_roll.xml.flat",
+        "source": "com.example.dicerollapp-main-41:/layout/fragment_dice_roll.xml"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/drawable_dice_roller_logo.png.flat",
-        "source": "com.example.dicerollapp-main-41:/drawable/dice_roller_logo.png"
-    },
-    {
-        "merged": "com.example.dicerollapp-merged_res-39:/drawable_d1.png.flat",
-        "source": "com.example.dicerollapp-main-41:/drawable/d1.png"
-    },
-    {
-        "merged": "com.example.dicerollapp-merged_res-39:/drawable_go_back.png.flat",
-        "source": "com.example.dicerollapp-main-41:/drawable/go_back.png"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\drawable_history.png.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\drawable\\history.png"
     },
     {
         "merged": "com.example.dicerollapp-merged_res-39:/layout_activity_dice.xml.flat",
         "source": "com.example.dicerollapp-main-41:/layout/activity_dice.xml"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/layout_list_view_item_row.xml.flat",
-        "source": "com.example.dicerollapp-main-41:/layout/list_view_item_row.xml"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\layout_list_view_item_row.xml.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\layout\\list_view_item_row.xml"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/drawable_d6.png.flat",
-        "source": "com.example.dicerollapp-main-41:/drawable/d6.png"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\drawable_back.xml.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\drawable\\back.xml"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.dicerollapp-main-41:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\layout_fragment_dice_selection.xml.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\layout\\fragment_dice_selection.xml"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.example.dicerollapp-main-41:/drawable/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/drawable_d5.png.flat",
-        "source": "com.example.dicerollapp-main-41:/drawable/d5.png"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\drawable_d4.png.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\drawable\\d4.png"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.dicerollapp-main-41:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\drawable_go_back.png.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\drawable\\go_back.png"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.dicerollapp-main-41:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.dicerollapp-main-41:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/layout_toolbar.xml.flat",
-        "source": "com.example.dicerollapp-main-41:/layout/toolbar.xml"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/drawable_history.png.flat",
-        "source": "com.example.dicerollapp-main-41:/drawable/history.png"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\drawable_dice_roller_logo.png.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\drawable\\dice_roller_logo.png"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/drawable_select.png.flat",
-        "source": "com.example.dicerollapp-main-41:/drawable/select.png"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\drawable_d6.png.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\drawable\\d6.png"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/raw_roll.ogg.flat",
-        "source": "com.example.dicerollapp-main-41:/raw/roll.ogg"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\layout_activity_dice.xml.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\layout\\activity_dice.xml"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/layout_fragment_dice_selection.xml.flat",
-        "source": "com.example.dicerollapp-main-41:/layout/fragment_dice_selection.xml"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\layout_toolbar.xml.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\layout\\toolbar.xml"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/drawable_d3.png.flat",
-        "source": "com.example.dicerollapp-main-41:/drawable/d3.png"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\drawable_rolling_dice_background.xml.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\drawable\\rolling_dice_background.xml"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.dicerollapp-main-41:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\drawable_d2.png.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\drawable\\d2.png"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.dicerollapp-main-41:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.dicerollapp-main-41:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.dicerollapp-main-41:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\drawable_pngimg_com___dice_png41.png.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\drawable\\pngimg_com___dice_png41.png"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/drawable_pngimg_com___dice_png41.png.flat",
-        "source": "com.example.dicerollapp-main-41:/drawable/pngimg_com___dice_png41.png"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\layout_fragment_dice_history.xml.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\layout\\fragment_dice_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\raw_roll.ogg.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\raw\\roll.ogg"
+    },
+    {
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\drawable_d3.png.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\drawable\\d3.png"
+    },
+    {
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "com.example.dicerollapp-merged_res-39:/layout_fragment_dice_history.xml.flat",
         "source": "com.example.dicerollapp-main-41:/layout/fragment_dice_history.xml"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.dicerollapp-main-41:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\drawable_select.png.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\drawable\\select.png"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/drawable_back.xml.flat",
-        "source": "com.example.dicerollapp-main-41:/drawable/back.xml"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.dicerollapp-main-41:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\layout_fragment_login.xml.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\layout\\fragment_login.xml"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.dicerollapp-main-41:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\layout_activity_create_account.xml.flat",
+        "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\layout\\activity_create_account.xml"
     }
 ]

@@ -16,6 +16,7 @@ drawable d3
 drawable d4
 drawable d5
 drawable d6
+drawable dice
 drawable dice_roller_logo
 drawable go_back
 drawable history
@@ -40,14 +41,13 @@ id editTextEmail
 id editTextPassword
 id editTextUsername
 id fragmentContainer
+id historyTable
 id imageView
 id imageViewIcon
-id label
 id left_drawer
 id logo
 id oneDieRadioButton
 id selectDiceButton
-id textView2
 id textViewName
 id threeDiceRadioButton
 id toolbar
@@ -57,6 +57,7 @@ layout activity_create_account
 layout activity_dice
 layout activity_main
 layout fragment_dice_history
+layout fragment_dice_roll
 layout fragment_dice_selection
 layout fragment_login
 layout list_view_item_row

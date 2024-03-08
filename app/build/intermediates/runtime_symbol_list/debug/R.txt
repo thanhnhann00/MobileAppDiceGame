@@ -3036,6 +3036,7 @@ int drawable design_ic_visibility 0x7f08009d
 int drawable design_ic_visibility_off 0x7f08009e
 int drawable design_password_eye 0x7f08009f
 int drawable design_snackbar_background 0x7f0800a0
+int drawable dice 0x7f080101
 int drawable dice_roller_logo 0x7f0800a1
 int drawable go_back 0x7f0800a2
 int drawable googleg_disabled_color_18 0x7f0800a3
@@ -3364,6 +3365,7 @@ int id grouping 0x7f0900e4
 int id groups 0x7f0900e5
 int id header_title 0x7f0900e6
 int id hideable 0x7f0900e7
+int id historyTable 0x7f090216
 int id home 0x7f0900e8
 int id homeAsUp 0x7f0900e9
 int id honorRequest 0x7f0900ea
@@ -3387,7 +3389,6 @@ int id italic 0x7f0900fb
 int id item_touch_helper_previous_elevation 0x7f0900fc
 int id jumpToEnd 0x7f0900fd
 int id jumpToStart 0x7f0900fe
-int id label 0x7f0900ff
 int id labeled 0x7f090100
 int id layout 0x7f090101
 int id left 0x7f090102
@@ -3611,7 +3612,6 @@ int id textSpacerNoButtons 0x7f0901db
 int id textSpacerNoTitle 0x7f0901dc
 int id textStart 0x7f0901dd
 int id textTop 0x7f0901de
-int id textView2 0x7f0901df
 int id textViewName 0x7f0901e0
 int id text_input_end_icon 0x7f0901e1
 int id text_input_error_icon 0x7f0901e2
@@ -3803,6 +3803,7 @@ int layout design_navigation_menu_item 0x7f0c002e
 int layout design_text_input_end_icon 0x7f0c002f
 int layout design_text_input_start_icon 0x7f0c0030
 int layout fragment_dice_history 0x7f0c0031
+int layout fragment_dice_roll 0x7f0c0073
 int layout fragment_dice_selection 0x7f0c0032
 int layout fragment_login 0x7f0c0033
 int layout list_view_item_row 0x7f0c0034

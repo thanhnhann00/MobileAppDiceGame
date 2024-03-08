@@ -3037,6 +3037,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable dice
 drawable dice_roller_logo
 drawable go_back
 drawable googleg_disabled_color_18
@@ -3365,6 +3366,7 @@ id grouping
 id groups
 id header_title
 id hideable
+id historyTable
 id home
 id homeAsUp
 id honorRequest
@@ -3388,7 +3390,6 @@ id italic
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
-id label
 id labeled
 id layout
 id left
@@ -3612,7 +3613,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView2
 id textViewName
 id text_input_end_icon
 id text_input_error_icon
@@ -3804,6 +3804,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_dice_history
+layout fragment_dice_roll
 layout fragment_dice_selection
 layout fragment_login
 layout list_view_item_row
