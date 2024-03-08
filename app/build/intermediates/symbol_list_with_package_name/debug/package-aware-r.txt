@@ -3243,6 +3243,7 @@ id buttonLogin
 id buttonPanel
 id buttonQuickPlay
 id buttonRegister
+id button_logout
 id button_previous
 id cache_measures
 id callMeasure

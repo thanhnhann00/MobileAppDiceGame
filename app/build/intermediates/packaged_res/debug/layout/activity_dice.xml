@@ -25,7 +25,9 @@
         <FrameLayout
             android:id="@+id/content_frame"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" >
+
+        </FrameLayout>
 
     </LinearLayout>
 
@@ -45,18 +47,27 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             android:elevation="4dp"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            app:layout_scrollFlags="scroll|enterAlways" />
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
 
         <ImageButton
             android:id="@+id/button_previous"
-            android:layout_width="wrap_content"
-            android:layout_height="76dp"
-            android:layout_marginLeft="300dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="300dp"
             android:background="@android:color/transparent"
             android:importantForAccessibility="no"
             android:scaleType="centerInside"
             android:src="@drawable/go_back" />
+        <Button
+            android:id="@+id/button_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="300dp"
+            android:text="Log out" />
+
+
 
         <TextView
             android:id="@+id/tvHelp"
@@ -73,6 +84,7 @@
             android:textSize="24sp" />
 
         <!-- Add a LinearLayout to display two vertically aligned die images -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"

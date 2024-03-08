@@ -4,7 +4,7 @@
             "outputFile": "com.example.dicerollapp-mergeDebugResources-37:/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Alex\\.gradle\\caches\\transforms-3\\ce520ba9bc09bdffc014ac78f1b57c72\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
+                    "source": "C:\\Users\\nhanp\\.gradle\\caches\\transforms-3\\7bbcc62b26f1031e7d2248d729a4c83c\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

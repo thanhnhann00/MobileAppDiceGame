@@ -28,6 +28,7 @@ id buttonCreateAccount
 id buttonLogin
 id buttonQuickPlay
 id buttonRegister
+id button_logout
 id button_previous
 id container_toolbar
 id content_frame
