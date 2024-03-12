@@ -1,37 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:orientation="vertical">
 
         <TextView
-            android:id="@+id/label"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="100dp"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:textSize="45dp"
-            android:text="History"
+            android:text="Dice Roll History"
+            android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            android:gravity="center"
+            android:padding="16dp"/>
 
-        <TextView
-            android:layout_below="@id/label"
-            android:layout_centerInParent="true"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:layout_marginTop="10dp"
-            android:gravity="center_horizontal"
-            android:text="Edit fragment_dice_history.xml to change the appearance"
-            android:id="@+id/textView2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <TableLayout
+                    android:id="@+id/historyTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*">
+
+                        <!-- Headers -->
+                        <TableRow>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Roll Number"
+                                    android:textStyle="bold"
+                                    android:padding="8dp"/>
+                                <!-- Add more headers if needed -->
+                        </TableRow>
+
+                        <!-- Content will be added dynamically in DiceHistoryFragment.java -->
+
+                </TableLayout>
+        </ScrollView>
+</LinearLayout>

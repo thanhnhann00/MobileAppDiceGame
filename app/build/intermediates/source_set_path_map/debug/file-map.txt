@@ -1,42 +1,42 @@
-com.example.dicerollapp-lifecycle-process-2.6.1-0 C:\Users\nhanp\.gradle\caches\transforms-3\058d604a11f9c04f8ef0340d8b502200\transformed\lifecycle-process-2.6.1\res
-com.example.dicerollapp-savedstate-1.2.1-1 C:\Users\nhanp\.gradle\caches\transforms-3\069d48bae1e2fdf8ba3271803b101aed\transformed\savedstate-1.2.1\res
-com.example.dicerollapp-recyclerview-1.1.0-2 C:\Users\nhanp\.gradle\caches\transforms-3\0fc00dd2b8b8eaee1b4a05eeb0a6804b\transformed\recyclerview-1.1.0\res
-com.example.dicerollapp-profileinstaller-1.3.0-3 C:\Users\nhanp\.gradle\caches\transforms-3\10186e6a35f575306ac135e42c65a3e5\transformed\profileinstaller-1.3.0\res
-com.example.dicerollapp-lifecycle-livedata-core-2.6.1-4 C:\Users\nhanp\.gradle\caches\transforms-3\11b46d33f9710e1b627ae07ec74744c9\transformed\lifecycle-livedata-core-2.6.1\res
-com.example.dicerollapp-lifecycle-livedata-2.6.1-5 C:\Users\nhanp\.gradle\caches\transforms-3\12c4ed571414f728958bd96d65d76c0f\transformed\lifecycle-livedata-2.6.1\res
-com.example.dicerollapp-coordinatorlayout-1.1.0-6 C:\Users\nhanp\.gradle\caches\transforms-3\22c87fa6939c41acac76524324b24c57\transformed\coordinatorlayout-1.1.0\res
-com.example.dicerollapp-activity-1.8.0-7 C:\Users\nhanp\.gradle\caches\transforms-3\29bf3bbf6601a18ca1229fb69ca7e128\transformed\activity-1.8.0\res
-com.example.dicerollapp-fragment-1.3.6-8 C:\Users\nhanp\.gradle\caches\transforms-3\2b7235fbc5d5c3773fd9319105753138\transformed\fragment-1.3.6\res
-com.example.dicerollapp-lifecycle-runtime-2.6.1-9 C:\Users\nhanp\.gradle\caches\transforms-3\3616746e60c6c82324204a78c5a0706c\transformed\lifecycle-runtime-2.6.1\res
-com.example.dicerollapp-core-runtime-2.2.0-10 C:\Users\nhanp\.gradle\caches\transforms-3\422e9ab390e181d11bee8d6c2cc3e544\transformed\core-runtime-2.2.0\res
-com.example.dicerollapp-lifecycle-viewmodel-savedstate-2.6.1-11 C:\Users\nhanp\.gradle\caches\transforms-3\472355dc00522cd2f1e3c6189c4e23ab\transformed\lifecycle-viewmodel-savedstate-2.6.1\res
-com.example.dicerollapp-core-1.9.0-12 C:\Users\nhanp\.gradle\caches\transforms-3\4886e1c6497da474ea40365daf7c7bb3\transformed\core-1.9.0\res
-com.example.dicerollapp-transition-1.2.0-13 C:\Users\nhanp\.gradle\caches\transforms-3\54d4671ee25e931d666d27789509b114\transformed\transition-1.2.0\res
-com.example.dicerollapp-play-services-measurement-api-21.5.1-14 C:\Users\nhanp\.gradle\caches\transforms-3\6ce538e5201732cb619e2b2aa951006b\transformed\play-services-measurement-api-21.5.1\res
-com.example.dicerollapp-appcompat-resources-1.6.1-15 C:\Users\nhanp\.gradle\caches\transforms-3\712208c8f75252f05bed0dbba4c27f33\transformed\appcompat-resources-1.6.1\res
-com.example.dicerollapp-annotation-experimental-1.3.0-16 C:\Users\nhanp\.gradle\caches\transforms-3\74edcea2dfb9c7783d46e258fb298330\transformed\annotation-experimental-1.3.0\res
-com.example.dicerollapp-browser-1.4.0-17 C:\Users\nhanp\.gradle\caches\transforms-3\775c045f340a3f5754253f1598d29616\transformed\browser-1.4.0\res
-com.example.dicerollapp-startup-runtime-1.1.1-18 C:\Users\nhanp\.gradle\caches\transforms-3\78641cf0c5aff5d7be2bc9bbbb9b8035\transformed\startup-runtime-1.1.1\res
-com.example.dicerollapp-appcompat-1.6.1-19 C:\Users\nhanp\.gradle\caches\transforms-3\7bbcc62b26f1031e7d2248d729a4c83c\transformed\appcompat-1.6.1\res
-com.example.dicerollapp-drawerlayout-1.1.1-20 C:\Users\nhanp\.gradle\caches\transforms-3\836ee9fad003e6b47f7949310b2464a7\transformed\drawerlayout-1.1.1\res
-com.example.dicerollapp-material-1.11.0-21 C:\Users\nhanp\.gradle\caches\transforms-3\840e0630c142b6e1e8934135c3e073b3\transformed\material-1.11.0\res
-com.example.dicerollapp-constraintlayout-2.1.4-22 C:\Users\nhanp\.gradle\caches\transforms-3\88ee5642db379990968bd42d15c60949\transformed\constraintlayout-2.1.4\res
-com.example.dicerollapp-ads-adservices-java-1.0.0-beta05-23 C:\Users\nhanp\.gradle\caches\transforms-3\9ddc4ae1200205854e312f445a6cab3b\transformed\ads-adservices-java-1.0.0-beta05\res
-com.example.dicerollapp-play-services-basement-18.3.0-24 C:\Users\nhanp\.gradle\caches\transforms-3\a064a398521faaf375ec809db3c93ae0\transformed\play-services-basement-18.3.0\res
-com.example.dicerollapp-lifecycle-viewmodel-2.6.1-25 C:\Users\nhanp\.gradle\caches\transforms-3\a1939dead9c6fe292680fb4dda003941\transformed\lifecycle-viewmodel-2.6.1\res
-com.example.dicerollapp-play-services-base-18.1.0-26 C:\Users\nhanp\.gradle\caches\transforms-3\b6c232612905fe1e6794dfa66cb80f31\transformed\play-services-base-18.1.0\res
-com.example.dicerollapp-viewpager2-1.0.0-27 C:\Users\nhanp\.gradle\caches\transforms-3\b89a0f2dfd9d3880643b7ee5303eaebe\transformed\viewpager2-1.0.0\res
-com.example.dicerollapp-core-ktx-1.9.0-28 C:\Users\nhanp\.gradle\caches\transforms-3\bbf6b3ed50173335c5342be0bfd7047a\transformed\core-ktx-1.9.0\res
-com.example.dicerollapp-emoji2-views-helper-1.2.0-29 C:\Users\nhanp\.gradle\caches\transforms-3\c94e2c4ec3bbb0472f49e9e439ff9904\transformed\emoji2-views-helper-1.2.0\res
-com.example.dicerollapp-cardview-1.0.0-30 C:\Users\nhanp\.gradle\caches\transforms-3\cc1bba3182c753535029bfbc17bad3c0\transformed\cardview-1.0.0\res
-com.example.dicerollapp-ads-adservices-1.0.0-beta05-31 C:\Users\nhanp\.gradle\caches\transforms-3\d4aaf7f6374a2e2308e8e6c98e9ee132\transformed\ads-adservices-1.0.0-beta05\res
-com.example.dicerollapp-firebase-common-20.4.2-32 C:\Users\nhanp\.gradle\caches\transforms-3\da60543c044e0374bacee0bc69fb334d\transformed\firebase-common-20.4.2\res
-com.example.dicerollapp-emoji2-1.2.0-33 C:\Users\nhanp\.gradle\caches\transforms-3\f4323e19628986a3ba2d9a999ba1e2cf\transformed\emoji2-1.2.0\res
-com.example.dicerollapp-pngs-34 C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\build\generated\res\pngs\debug
-com.example.dicerollapp-res-35 C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\build\generated\res\processDebugGoogleServices
-com.example.dicerollapp-resValues-36 C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\build\generated\res\resValues\debug
-com.example.dicerollapp-packageDebugResources-37 C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.dicerollapp-packageDebugResources-38 C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.dicerollapp-merged_res-39 C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\build\intermediates\merged_res\debug
-com.example.dicerollapp-debug-40 C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\src\debug\res
-com.example.dicerollapp-main-41 C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\src\main\res
+com.example.dicerollapp-core-1.9.0-0 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\023ae5616399ec37c7e0a3c3bd010300\transformed\core-1.9.0\res
+com.example.dicerollapp-transition-1.2.0-1 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\0ebd87420a50669088f487fd3db5b57f\transformed\transition-1.2.0\res
+com.example.dicerollapp-coordinatorlayout-1.1.0-2 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\1edd528c1c6997c21d5b72be53475765\transformed\coordinatorlayout-1.1.0\res
+com.example.dicerollapp-lifecycle-runtime-2.6.1-3 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\2a2f3aad0c2ca0d3e284b9584efc4029\transformed\lifecycle-runtime-2.6.1\res
+com.example.dicerollapp-activity-1.8.0-4 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\326061f84fb01da5b19bb8a5a11fad26\transformed\activity-1.8.0\res
+com.example.dicerollapp-ads-adservices-1.0.0-beta05-5 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\334071200209cf665fd1208fc740c15b\transformed\ads-adservices-1.0.0-beta05\res
+com.example.dicerollapp-lifecycle-process-2.6.1-6 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\389bda6d51d82e8bb94cca0367a29b72\transformed\lifecycle-process-2.6.1\res
+com.example.dicerollapp-play-services-measurement-api-21.5.1-7 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\420644fdab516880c232f09f30baeb21\transformed\play-services-measurement-api-21.5.1\res
+com.example.dicerollapp-annotation-experimental-1.3.0-8 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\44797fee1cade22d4e2727e3eecac38d\transformed\annotation-experimental-1.3.0\res
+com.example.dicerollapp-lifecycle-viewmodel-savedstate-2.6.1-9 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\4907d680f22a677c631bd923c8a38fd0\transformed\lifecycle-viewmodel-savedstate-2.6.1\res
+com.example.dicerollapp-play-services-base-18.0.1-10 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\4f01af5947593220d1973216d8ad8fe9\transformed\play-services-base-18.0.1\res
+com.example.dicerollapp-browser-1.4.0-11 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\51bfd93617449c91cea1ff41804bb3ee\transformed\browser-1.4.0\res
+com.example.dicerollapp-core-ktx-1.9.0-12 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\576ad12fff063922142988139fd904b0\transformed\core-ktx-1.9.0\res
+com.example.dicerollapp-firebase-common-20.4.2-13 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\5cf235895680a155312d831b2519f4dd\transformed\firebase-common-20.4.2\res
+com.example.dicerollapp-fragment-1.3.6-14 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\6343b299a677a1be587dd955d168f719\transformed\fragment-1.3.6\res
+com.example.dicerollapp-recyclerview-1.1.0-15 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\70eb38dfa4a07d6e5f82d53f68cb6192\transformed\recyclerview-1.1.0\res
+com.example.dicerollapp-core-runtime-2.2.0-16 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\7957cbd40d03f0ca21f44bced6c6d967\transformed\core-runtime-2.2.0\res
+com.example.dicerollapp-startup-runtime-1.1.1-17 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\7b235ed94c965589f19f4b945bc903aa\transformed\startup-runtime-1.1.1\res
+com.example.dicerollapp-emoji2-1.2.0-18 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\96152e55a012b0fa706f5c284d43d55d\transformed\emoji2-1.2.0\res
+com.example.dicerollapp-lifecycle-livedata-2.6.1-19 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\a2472a3c87dd696e41bf77b6a225cb86\transformed\lifecycle-livedata-2.6.1\res
+com.example.dicerollapp-lifecycle-viewmodel-2.6.1-20 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\a71d59b5c954abc7c008f6afaef53a31\transformed\lifecycle-viewmodel-2.6.1\res
+com.example.dicerollapp-drawerlayout-1.1.1-21 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\b0df752c64f269717ce89008d1325e0f\transformed\drawerlayout-1.1.1\res
+com.example.dicerollapp-material-1.11.0-22 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\b281c0b947b9a92684d8f0d7701a8b9a\transformed\material-1.11.0\res
+com.example.dicerollapp-lifecycle-livedata-core-2.6.1-23 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\b40be27056a6ad8aef682c76fb9ab166\transformed\lifecycle-livedata-core-2.6.1\res
+com.example.dicerollapp-play-services-basement-18.3.0-24 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\be588496505ed0d2bf49a12982d62c09\transformed\play-services-basement-18.3.0\res
+com.example.dicerollapp-savedstate-1.2.1-25 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\bf90170a4628a4c83726f0241edd1fbc\transformed\savedstate-1.2.1\res
+com.example.dicerollapp-ads-adservices-java-1.0.0-beta05-26 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\c960ca5ffdea9072262d46023ba17791\transformed\ads-adservices-java-1.0.0-beta05\res
+com.example.dicerollapp-constraintlayout-2.1.4-27 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\cddb234bba5e3a0a01353fbd2de13051\transformed\constraintlayout-2.1.4\res
+com.example.dicerollapp-appcompat-1.6.1-28 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\ce520ba9bc09bdffc014ac78f1b57c72\transformed\appcompat-1.6.1\res
+com.example.dicerollapp-viewpager2-1.0.0-29 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\cf2dcbf4fd083df7ec29f6ed0c09ad70\transformed\viewpager2-1.0.0\res
+com.example.dicerollapp-emoji2-views-helper-1.2.0-30 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\e56c8a68f7e628ead750774be6d90a6e\transformed\emoji2-views-helper-1.2.0\res
+com.example.dicerollapp-profileinstaller-1.3.0-31 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\f1cfb30a93845073092acfa493ec6b8e\transformed\profileinstaller-1.3.0\res
+com.example.dicerollapp-appcompat-resources-1.6.1-32 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\f9e3dbea54b52212a96ec9b39779eb67\transformed\appcompat-resources-1.6.1\res
+com.example.dicerollapp-cardview-1.0.0-33 C:\Users\ALEXIS MARTINEZ\.gradle\caches\transforms-3\fa110e1b342ab11d619696130af5a031\transformed\cardview-1.0.0\res
+com.example.dicerollapp-pngs-34 C:\Users\ALEXIS MARTINEZ\StudioProjects\MobileAppDiceGame\app\build\generated\res\pngs\debug
+com.example.dicerollapp-res-35 C:\Users\ALEXIS MARTINEZ\StudioProjects\MobileAppDiceGame\app\build\generated\res\processDebugGoogleServices
+com.example.dicerollapp-resValues-36 C:\Users\ALEXIS MARTINEZ\StudioProjects\MobileAppDiceGame\app\build\generated\res\resValues\debug
+com.example.dicerollapp-packageDebugResources-37 C:\Users\ALEXIS MARTINEZ\StudioProjects\MobileAppDiceGame\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.dicerollapp-packageDebugResources-38 C:\Users\ALEXIS MARTINEZ\StudioProjects\MobileAppDiceGame\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.dicerollapp-merged_res-39 C:\Users\ALEXIS MARTINEZ\StudioProjects\MobileAppDiceGame\app\build\intermediates\merged_res\debug
+com.example.dicerollapp-debug-40 C:\Users\ALEXIS MARTINEZ\StudioProjects\MobileAppDiceGame\app\src\debug\res
+com.example.dicerollapp-main-41 C:\Users\ALEXIS MARTINEZ\StudioProjects\MobileAppDiceGame\app\src\main\res
