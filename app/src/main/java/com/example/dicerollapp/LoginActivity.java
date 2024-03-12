@@ -3,6 +3,7 @@ package com.example.dicerollapp;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -44,7 +45,11 @@ public class LoginActivity extends AppCompatActivity {
                 // Retrieve entered username and password
                 String username = editTextUsername.getText().toString();
                 String password = editTextPassword.getText().toString();
-                loginUser(username, password);
+                if (TextUtils.isEmpty(username) || TextUtils.isEmpty(password)){
+                    Toast.makeText(LoginActivity.this, "Empty Credentials!", Toast.LENGTH_SHORT).show();
+                } else {
+                    loginUser(username , password);
+                }
             }
         });
 
@@ -67,6 +72,8 @@ public class LoginActivity extends AppCompatActivity {
         auth.signInWithEmailAndPassword(email,password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
             @Override
             public void onSuccess(AuthResult authResult) {
+                Toast.makeText(LoginActivity.this, "Update the profile " +
+                        "for better expereince", Toast.LENGTH_SHORT).show();
                 Toast.makeText(LoginActivity.this, "Login Successful!",Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(LoginActivity.this, DiceActivity.class));
                 finish();

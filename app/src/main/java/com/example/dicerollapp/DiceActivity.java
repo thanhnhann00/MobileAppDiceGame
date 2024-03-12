@@ -1,5 +1,7 @@
 package com.example.dicerollapp;
 
+import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -32,21 +34,6 @@ import java.util.Objects;
 import java.util.Random;
 
 public class DiceActivity extends AppCompatActivity {
-    // Store the Thread sleep time in an integer variable
-    int delayTime = 20;
-    // Store the number of Dice roll animations per execution
-    int rollAnimations = 40;
-    // Store the ids for Dice images in an integer array
-    int[] diceImages = new int[]{R.drawable.d1, R.drawable.d2, R.drawable.d3, R.drawable.d4, R.drawable.d5, R.drawable.d6};
-    // Define a Random object
-    Random random = new Random();
-    // Declare View object references
-    TextView tvHelp;
-    ImageView die1;
-    ImageView die2;
-    LinearLayout diceContainer;
-    // Declare a MediaPlayer object reference
-    MediaPlayer mp;
 
     private String[] mNavigationDrawerItemTitles;
     private DrawerLayout mDrawerLayout;
@@ -55,6 +42,7 @@ public class DiceActivity extends AppCompatActivity {
     private CharSequence mDrawerTitle;
     private CharSequence mTitle;
     ActionBarDrawerToggle toggle;
+    private Button logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,19 +86,30 @@ public class DiceActivity extends AppCompatActivity {
         setupDrawerToggle();
         selectItem(0);
 
+        logout = findViewById(R.id.button_logout);
+        logout.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                FirebaseAuth.getInstance().signOut();
+                Toast.makeText(DiceActivity.this, "Logged out",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(DiceActivity.this, MainActivity.class));
+
+
+            }
+        });
+
+
         //------------Dummy----------
-
-
         HashMap<String, Object> player = new HashMap<>();
         player.put("Name","Aaron");
         player.put("Email","aaron@gmai.com");
         FirebaseDatabase.getInstance().getReference().child("Players").updateChildren(player);
-
     }
     private void insertPlayerData(String name, String email,int score){
 
     }
     //----------------DUmmy----------------
+
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
 
         @Override
