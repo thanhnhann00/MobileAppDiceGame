@@ -3038,6 +3038,11 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable dice
+drawable dice10
+drawable dice12
+drawable dice20
+drawable dice4
+drawable dice8
 drawable dice_roller_logo
 drawable go_back
 drawable googleg_disabled_color_18
