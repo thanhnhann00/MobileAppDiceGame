@@ -1,11 +1,21 @@
 package com.example.dicerollapp;
 
+import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Button;
+import android.widget.Toast;
+
+
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -15,6 +25,13 @@ import androidx.fragment.app.FragmentManager;
 import com.example.dicerollapp.navigation_drawer.DataModel;
 import com.example.dicerollapp.navigation_drawer.DrawerItemCustomAdapter;
 import java.util.Objects;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
+import java.util.Objects;
+import java.util.Random;
 
 public class DiceActivity extends AppCompatActivity {
 
@@ -25,6 +42,7 @@ public class DiceActivity extends AppCompatActivity {
     private CharSequence mDrawerTitle;
     private CharSequence mTitle;
     ActionBarDrawerToggle toggle;
+    private Button logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,8 +85,30 @@ public class DiceActivity extends AppCompatActivity {
         mDrawerLayout.setDrawerListener(toggle);
         setupDrawerToggle();
         selectItem(0);
-    }
 
+        logout = findViewById(R.id.button_logout);
+        logout.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                FirebaseAuth.getInstance().signOut();
+                Toast.makeText(DiceActivity.this, "Logged out",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(DiceActivity.this, MainActivity.class));
+
+
+            }
+        });
+
+
+        //------------Dummy----------
+        HashMap<String, Object> player = new HashMap<>();
+        player.put("Name","Aaron");
+        player.put("Email","aaron@gmai.com");
+        FirebaseDatabase.getInstance().getReference().child("Players").updateChildren(player);
+    }
+    private void insertPlayerData(String name, String email,int score){
+
+    }
+    //----------------DUmmy----------------
 
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
 

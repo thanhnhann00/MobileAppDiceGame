@@ -17,6 +17,11 @@ drawable d4
 drawable d5
 drawable d6
 drawable dice
+drawable dice10
+drawable dice12
+drawable dice20
+drawable dice4
+drawable dice8
 drawable dice_roller_logo
 drawable go_back
 drawable history
@@ -29,6 +34,7 @@ id buttonCreateAccount
 id buttonLogin
 id buttonQuickPlay
 id buttonRegister
+id button_logout
 id button_previous
 id container_toolbar
 id content_frame

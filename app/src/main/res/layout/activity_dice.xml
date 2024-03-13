@@ -26,6 +26,12 @@
                 android:elevation="4dp"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
                 app:layout_scrollFlags="scroll|enterAlways" />
+            <Button
+                android:id="@+id/button_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="300dp"
+                android:text="Log out" />
 
             <FrameLayout
                 android:id="@+id/content_frame"
