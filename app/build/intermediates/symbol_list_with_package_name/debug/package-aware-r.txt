@@ -3312,6 +3312,7 @@ id dice4
 id dice6
 id dice8
 id diceContainer
+id diceOptions
 id diceRadioGroup
 id die1
 id die2
@@ -3403,6 +3404,7 @@ id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
 id labeled
+id largeDice
 id layout
 id left
 id leftToRight
@@ -3576,6 +3578,7 @@ id sin
 id skipCollapsed
 id skipped
 id slide
+id smallDice
 id snackbar_action
 id snackbar_text
 id snap

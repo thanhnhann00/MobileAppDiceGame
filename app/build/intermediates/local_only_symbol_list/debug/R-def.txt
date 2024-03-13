@@ -45,6 +45,7 @@ id dice4
 id dice6
 id dice8
 id diceContainer
+id diceOptions
 id diceRadioGroup
 id die1
 id die2
@@ -56,10 +57,12 @@ id fragmentContainer
 id historyTable
 id imageView
 id imageViewIcon
+id largeDice
 id left_drawer
 id logo
 id oneDieRadioButton
 id selectDiceButton
+id smallDice
 id textViewName
 id threeDiceRadioButton
 id toolbar
