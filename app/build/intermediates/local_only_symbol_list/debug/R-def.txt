@@ -38,6 +38,12 @@ id button_logout
 id button_previous
 id container_toolbar
 id content_frame
+id dice10
+id dice12
+id dice20
+id dice4
+id dice6
+id dice8
 id diceContainer
 id diceRadioGroup
 id die1
