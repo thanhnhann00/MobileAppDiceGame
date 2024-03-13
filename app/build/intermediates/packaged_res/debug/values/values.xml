@@ -4,6 +4,7 @@
     <string-array name="navigation_drawer_items_array">
         <item>Dice History</item>
         <item>Select Dice</item>
+        <item>Select Dice</item>
     </string-array>
     <color name="black">#FF000000</color>
     <color name="purple_200">#FFBB86FC</color>
