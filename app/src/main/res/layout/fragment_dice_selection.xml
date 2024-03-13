@@ -2,44 +2,116 @@
 <!-- fragment_dice_selection.xml -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="1dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select the number of dice:"
-        android:textSize="18sp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Select the type of dice:"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/dice4"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/dice4" />
+
+        <ImageButton
+            android:id="@+id/dice6"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/d6" />
+
+        <ImageButton
+            android:id="@+id/dice8"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dice8" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/dice10"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dice10" />
+
+        <ImageButton
+            android:id="@+id/dice12"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dice12" />
+
+        <ImageButton
+            android:id="@+id/dice20"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dice20" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Select the number of dice:"
+        android:textSize="18sp" />
 
     <RadioGroup
         android:id="@+id/diceRadioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
 
         <RadioButton
             android:id="@+id/oneDieRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1"
-            android:checked="true"/>
+            android:checked="true"
+            android:text="1" />
 
         <RadioButton
             android:id="@+id/twoDiceRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2"/>
+            android:text="2" />
 
         <RadioButton
             android:id="@+id/threeDiceRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="3"/>
+            android:text="3" />
 
         <!-- Add more RadioButtons as needed -->
 
@@ -49,8 +121,8 @@
         android:id="@+id/selectDiceButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:text="Select" />
 
 </LinearLayout>

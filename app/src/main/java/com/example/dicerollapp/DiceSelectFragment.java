@@ -26,6 +26,9 @@ public class DiceSelectFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_dice_selection, container, false);
 
+        dice4 = rootView.findViewById(R.id.dice4);
+        d6 = rootView.findViewById(R.id.d6);
+
         return rootView;
     }
 
