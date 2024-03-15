@@ -82,9 +82,27 @@ MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Alex\.g
 		INJECTED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:3:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\Alex\.gradle\caches\transforms-3\6ce538e5201732cb619e2b2aa951006b\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\Alex\.gradle\caches\transforms-3\6ce538e5201732cb619e2b2aa951006b\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:21.5.1] C:\Users\Alex\.gradle\caches\transforms-3\bd6b2d3690d2434d8fce5255cf617d6f\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:21.5.1] C:\Users\Alex\.gradle\caches\transforms-3\bd6b2d3690d2434d8fce5255cf617d6f\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.5.1] C:\Users\Alex\.gradle\caches\transforms-3\5c7eb9ee7e58291e57be54fc78a4e0a4\transformed\play-services-measurement-impl-21.5.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.5.1] C:\Users\Alex\.gradle\caches\transforms-3\5c7eb9ee7e58291e57be54fc78a4e0a4\transformed\play-services-measurement-impl-21.5.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.1] C:\Users\Alex\.gradle\caches\transforms-3\ce6557a10604d52ee0d096b44e3e2d23\transformed\play-services-measurement-sdk-api-21.5.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.1] C:\Users\Alex\.gradle\caches\transforms-3\ce6557a10604d52ee0d096b44e3e2d23\transformed\play-services-measurement-sdk-api-21.5.1\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:3:22-65
+uses-feature#android.hardware.sensor.accelerometer
+ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:4:5-98
+	android:required
+		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:4:72-95
+	android:name
+		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:4:19-71
 application
-ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:4:5-25:19
-INJECTED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:4:5-25:19
+ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:5:5-26:19
+INJECTED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:5:5-26:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\Alex\.gradle\caches\transforms-3\840e0630c142b6e1e8934135c3e073b3\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\Alex\.gradle\caches\transforms-3\840e0630c142b6e1e8934135c3e073b3\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Alex\.gradle\caches\transforms-3\88ee5642db379990968bd42d15c60949\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -148,49 +166,49 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Alex\.gradle\cache
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\Alex\.gradle\caches\transforms-3\4886e1c6497da474ea40365daf7c7bb3\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:9:9-35
+		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:7:9-41
+		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:8:9-54
+		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:6:9-43
+		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:5:9-35
+		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:10:9-76
+		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:11:9-76
 activity#com.example.dicerollapp.MainActivity
-ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:11:9-21:20
+ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:12:9-22:20
 	android:screenOrientation
-		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:15:13-49
+		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:16:13-49
 	android:exported
-		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:13:13-36
+		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:14:13-36
 	android:configChanges
-		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:14:13-63
+		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:15:13-63
 	android:name
-		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:12:13-41
+		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:13:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:16:13-20:29
+ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:17:17-69
+ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:17:25-66
+		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:19:17-77
+ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:19:27-74
+		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:20:27-74
 activity#com.example.dicerollapp.LoginActivity
-ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:22:9-51
+ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:23:9-51
 	android:name
-		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:22:19-48
+		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:23:19-48
 activity#com.example.dicerollapp.DiceActivity
-ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:23:9-50
+ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:24:9-50
 	android:name
-		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:23:19-47
+		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:24:19-47
 activity#com.example.dicerollapp.CreateAccountActivity
-ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:24:9-58
+ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:25:9-58
 	android:name
-		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:24:19-56
+		ADDED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml:25:19-56
 uses-sdk
 INJECTED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Alex\Desktop\SchoolProgramminStuff\Mobile App Dev\MobileAppDiceGame\app\src\main\AndroidManifest.xml
@@ -471,16 +489,6 @@ ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\Alex\.gra
 		ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\Alex\.gradle\caches\transforms-3\b6c232612905fe1e6794dfa66cb80f31\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\Alex\.gradle\caches\transforms-3\b6c232612905fe1e6794dfa66cb80f31\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
-uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\Alex\.gradle\caches\transforms-3\6ce538e5201732cb619e2b2aa951006b\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:24:5-68
-MERGED from [com.google.android.gms:play-services-measurement:21.5.1] C:\Users\Alex\.gradle\caches\transforms-3\bd6b2d3690d2434d8fce5255cf617d6f\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement:21.5.1] C:\Users\Alex\.gradle\caches\transforms-3\bd6b2d3690d2434d8fce5255cf617d6f\transformed\play-services-measurement-21.5.1\AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.5.1] C:\Users\Alex\.gradle\caches\transforms-3\5c7eb9ee7e58291e57be54fc78a4e0a4\transformed\play-services-measurement-impl-21.5.1\AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.5.1] C:\Users\Alex\.gradle\caches\transforms-3\5c7eb9ee7e58291e57be54fc78a4e0a4\transformed\play-services-measurement-impl-21.5.1\AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.1] C:\Users\Alex\.gradle\caches\transforms-3\ce6557a10604d52ee0d096b44e3e2d23\transformed\play-services-measurement-sdk-api-21.5.1\AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.1] C:\Users\Alex\.gradle\caches\transforms-3\ce6557a10604d52ee0d096b44e3e2d23\transformed\play-services-measurement-sdk-api-21.5.1\AndroidManifest.xml:25:5-68
-	android:name
-		ADDED from [com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\Alex\.gradle\caches\transforms-3\6ce538e5201732cb619e2b2aa951006b\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:24:22-65
 uses-permission#com.google.android.gms.permission.AD_ID
 ADDED from [com.google.android.gms:play-services-measurement-api:21.5.1] C:\Users\Alex\.gradle\caches\transforms-3\6ce538e5201732cb619e2b2aa951006b\transformed\play-services-measurement-api-21.5.1\AndroidManifest.xml:25:5-79
 MERGED from [com.google.android.gms:play-services-measurement-impl:21.5.1] C:\Users\Alex\.gradle\caches\transforms-3\5c7eb9ee7e58291e57be54fc78a4e0a4\transformed\play-services-measurement-impl-21.5.1\AndroidManifest.xml:27:5-79
