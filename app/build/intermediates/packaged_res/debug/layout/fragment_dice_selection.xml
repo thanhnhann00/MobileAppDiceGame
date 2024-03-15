@@ -3,6 +3,7 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/diceOptions"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -18,6 +19,7 @@
         android:textSize="18sp" />
 
     <LinearLayout
+        android:id="@+id/smallDice"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
@@ -49,6 +51,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/largeDice"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
