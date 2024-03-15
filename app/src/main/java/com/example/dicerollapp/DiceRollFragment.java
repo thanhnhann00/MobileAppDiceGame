@@ -1,5 +1,11 @@
 package com.example.dicerollapp;
 
+import android.content.Context;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorListener;
+import android.hardware.SensorManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,7 +20,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import java.util.Random;
 
-public class DiceRollFragment extends Fragment {
+public class DiceRollFragment extends Fragment implements SensorEventListener{
     // Store the Thread sleep time in an integer variable
     private final int delayTime = 20;
     // Store the number of Dice roll animations per execution
@@ -28,11 +34,17 @@ public class DiceRollFragment extends Fragment {
     private ImageView die1;
     private ImageView die2;
     private LinearLayout diceContainer;
-    // Declare a MediaPlayer object reference
+    //Declare a MediaPlayer object reference
     private MediaPlayer mp;
 
-    // Declare a ViewModel object reference
+    //Declare a ViewModel object reference
     private DiceViewModel viewModel;
+
+    // Declare Sensor variables
+    private SensorManager sensorManager;
+    private Sensor accelerometer;
+    private static final float SHAKE_THRESHOLD = 5.0f;
+    private long lastShakeTime;
 
     public DiceRollFragment() {
         // Required empty public constructor
@@ -65,7 +77,49 @@ public class DiceRollFragment extends Fragment {
             }
         });
         viewModel = new ViewModelProvider(requireActivity()).get(DiceViewModel.class);
+
+        // Initialize sensor variables
+        sensorManager = (SensorManager) requireActivity().getSystemService(Context.SENSOR_SERVICE);
+        accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        lastShakeTime = System.currentTimeMillis();
+
         return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        //Register the accelerometer sensor
+        sensorManager.registerListener((SensorEventListener) this, accelerometer, SensorManager.SENSOR_DELAY_NORMAL);
+    }
+
+    @Override
+    public void onPause() {
+        //Unregister the sensor to avoid battery drain
+        sensorManager.unregisterListener((SensorEventListener) this);
+        super.onPause();
+    }
+
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+        if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
+            long currentTime = System.currentTimeMillis();
+            if ((currentTime - lastShakeTime) > delayTime) {
+                lastShakeTime = currentTime;
+                float x = event.values[0];
+                float y = event.values[1];
+                float z = event.values[2];
+                float acceleration = (float) Math.sqrt(x * x + y * y + z * z) - SensorManager.GRAVITY_EARTH;
+                if (acceleration > SHAKE_THRESHOLD) {
+                    rollDice();
+                }
+            }
+        }
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+        // Not needed for this example
     }
 
     private void rollDice() {

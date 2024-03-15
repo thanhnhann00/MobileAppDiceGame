@@ -50,16 +50,16 @@ public class DiceActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dice);
 
         // Previous button click listener
-//        ImageButton buttonPrevious = findViewById(R.id.button_previous);
-//        buttonPrevious.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                // Navigate back to the main page (MainActivity)
-//                Intent intent = new Intent(DiceActivity.this, MainActivity.class);
-//                startActivity(intent);
-//                finish();  // Close the current activity
-//            }
-//        });
+        ImageButton buttonPrevious = findViewById(R.id.button_previous);
+        buttonPrevious.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Navigate back to the main page (MainActivity)
+                Intent intent = new Intent(DiceActivity.this, MainActivity.class);
+                startActivity(intent);
+                finish();  // Close the current activity
+            }
+        });
 
         mTitle = mDrawerTitle = getTitle();
         mNavigationDrawerItemTitles= getResources().getStringArray(R.array.navigation_drawer_items_array);

@@ -12,6 +12,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+
         <LinearLayout
             android:id="@+id/container_toolbar"
             android:layout_width="match_parent"
@@ -25,7 +26,22 @@
                 android:background="#ba160c"
                 android:elevation="4dp"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-                app:layout_scrollFlags="scroll|enterAlways" />
+                app:layout_scrollFlags="scroll|enterAlways">
+
+            <ImageButton
+                android:id="@+id/button_previous"
+                android:background="@android:color/transparent"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="360dp"
+                android:importantForAccessibility="no"
+                android:scaleType="centerInside"
+                android:src="@drawable/go_back"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            </androidx.appcompat.widget.Toolbar>
             <Button
                 android:id="@+id/button_logout"
                 android:layout_width="wrap_content"
