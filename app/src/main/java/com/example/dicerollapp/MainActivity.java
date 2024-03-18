@@ -27,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
         buttonCreateAccount = findViewById(R.id.buttonCreateAccount);
         buttonCreateAccount.setBackgroundColor(Color.parseColor("#010b13"));
 
+        Button buttonMainMenu = findViewById(R.id.buttonMainMenu);
+        buttonMainMenu.setBackgroundColor(Color.parseColor("#010b13"));
+
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,6 +54,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent( MainActivity.this, CreateAccountActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        buttonMainMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent( MainActivity.this, MainMenuActivity.class);
                 startActivity(intent);
                 finish();
             }
