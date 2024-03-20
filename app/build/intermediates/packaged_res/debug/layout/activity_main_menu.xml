@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#20FF8C">
@@ -10,25 +11,25 @@
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:scaleType="fitXY"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/dice_roller_logo" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonSelect"
+        style="@style/BlackButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Select Dice"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo"
-        android:layout_marginTop="80dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="8dp"
         android:drawableStart="@drawable/dice_icon"
         android:drawableEnd="@drawable/dice_icon"
-        style="@style/BlackButton"/>
+        android:text="Select Dice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonMiniGame"
@@ -59,6 +60,20 @@
         android:drawableStart="@drawable/settings_icon"
         android:drawableEnd="@drawable/settings_icon"
         style="@style/BlackButton"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonDefaultDices"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Default (2 Dices)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonSettings"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawableStart="@drawable/dice_icon"
+        android:drawableEnd="@drawable/dice_icon"
+        style="@style/BlackButton"/>
 
     <FrameLayout
         android:id="@+id/fragmentContainer"
@@ -66,10 +81,23 @@
         android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonSettings"
+        app:layout_constraintTop_toBottomOf="@id/buttonDefaultDices"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginTop="10dp">
     </FrameLayout>
+
+    <Button
+        android:id="@+id/button_logout1"
+        android:layout_width="80dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginBottom="23dp"
+        android:layout_marginLeft="290dp"
+        android:text="Logout"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSelect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

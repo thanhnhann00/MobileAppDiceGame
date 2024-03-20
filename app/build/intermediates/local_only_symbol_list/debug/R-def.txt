@@ -37,6 +37,7 @@ drawable select
 drawable settings_icon
 drawable settings_selection
 id buttonCreateAccount
+id buttonDefaultDices
 id buttonLogin
 id buttonMainMenu
 id buttonMiniGame
@@ -45,6 +46,7 @@ id buttonRegister
 id buttonSelect
 id buttonSettings
 id button_logout
+id button_logout1
 id button_previous
 id container_toolbar
 id content_frame

@@ -16,12 +16,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Locale;
 
 public class LoginActivity extends AppCompatActivity {
 
     private EditText editTextUsername, editTextPassword;
     private Button buttonLogin;
     private FirebaseAuth auth;
+    private DatabaseReference mDatabase;
 
     private static final String TAG = LoginActivity.class.getSimpleName();
 
@@ -33,10 +41,12 @@ public class LoginActivity extends AppCompatActivity {
         // Initialize UI elements
         editTextUsername = findViewById(R.id.editTextUsername);
         editTextPassword = findViewById(R.id.editTextPassword);
+
         buttonLogin = findViewById(R.id.buttonLogin);
         buttonLogin.setBackgroundColor(Color.parseColor("#010b13"));
     
         auth = FirebaseAuth.getInstance();
+        mDatabase = FirebaseDatabase.getInstance().getReference("Logged In History");
         
         // Set a click listener for the login button
         buttonLogin.setOnClickListener(new View.OnClickListener() {
@@ -68,6 +78,14 @@ public class LoginActivity extends AppCompatActivity {
         
     }
 
+    private String getCurrentDateTime() {
+        // Get current date and time in a desired format
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
+        return sdf.format(new Date());
+    }
+
+
+
     private void loginUser(String email, String password) {
         auth.signInWithEmailAndPassword(email,password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
             @Override
@@ -75,9 +93,22 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(LoginActivity.this, "Update the profile " +
                         "for better experience", Toast.LENGTH_SHORT).show();
                 Toast.makeText(LoginActivity.this, "Login Successful!",Toast.LENGTH_SHORT).show();
+                //capture Email, Method, Date and time of log in
+                String time = getCurrentDateTime();
+                String loginMethod = "email";
+                updateLoggedInHistoryDB(email,time,loginMethod);
                 startActivity(new Intent(LoginActivity.this, MainMenuActivity.class));
                 finish();
             }
         });
     }
+
+    private void updateLoggedInHistoryDB(String email, String time, String method){
+        HashMap<String, Object> player = new HashMap<>();
+        player.put("email",email);
+        player.put("loginMethod",method);
+        player.put("time",time);
+        mDatabase.child("ID 1 ").updateChildren(player);
+    }
+
 }

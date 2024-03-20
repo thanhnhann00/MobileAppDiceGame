@@ -20,4 +20,6 @@ public class DiceViewModel extends ViewModel {
             diceRollHistory.setValue(currentHistory);
         }
     }
+    //method to add roll result to firebase database here
+
 }

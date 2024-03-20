@@ -3251,6 +3251,7 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id buttonCreateAccount
+id buttonDefaultDices
 id buttonLogin
 id buttonMainMenu
 id buttonMiniGame
@@ -3260,6 +3261,7 @@ id buttonRegister
 id buttonSelect
 id buttonSettings
 id button_logout
+id button_logout1
 id button_previous
 id cache_measures
 id callMeasure
