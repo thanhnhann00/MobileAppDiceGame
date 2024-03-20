@@ -94,9 +94,10 @@ public class DiceActivity extends AppCompatActivity {
 
         //------------Dummy----------
         HashMap<String, Object> player = new HashMap<>();
-        player.put("Name","Aaron");
-        player.put("Email","aaron@gmai.com");
-        FirebaseDatabase.getInstance().getReference().child("Players").updateChildren(player);
+        player.put("Name","Jason");
+        player.put("Email","Jason@gmai.com");
+        player.put("ID","1");
+        FirebaseDatabase.getInstance().getReference().child("Players").child("Player 1").updateChildren(player);
     }
     private void insertPlayerData(String name, String email,int score){
 
