@@ -91,18 +91,7 @@ public class DiceActivity extends AppCompatActivity {
             }
         });
 
-
-        //------------Dummy----------
-        HashMap<String, Object> player = new HashMap<>();
-        player.put("Name","Jason");
-        player.put("Email","Jason@gmai.com");
-        player.put("ID","1");
-        FirebaseDatabase.getInstance().getReference().child("Players").child("Player 1").updateChildren(player);
     }
-    private void insertPlayerData(String name, String email,int score){
-
-    }
-    //----------------DUmmy----------------
 
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
 

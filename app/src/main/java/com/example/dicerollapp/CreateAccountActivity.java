@@ -16,6 +16,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class CreateAccountActivity extends AppCompatActivity {
     private EditText email;
@@ -23,6 +25,7 @@ public class CreateAccountActivity extends AppCompatActivity {
     private Button register;
     private FirebaseAuth auth;
     private ImageButton buttonPrevious;
+    private DatabaseReference mDatabase;
 
     protected void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
@@ -33,6 +36,7 @@ public class CreateAccountActivity extends AppCompatActivity {
         register = findViewById(R.id.buttonRegister);
         buttonPrevious = findViewById(R.id.button_previous);
         auth = FirebaseAuth.getInstance();
+        mDatabase = FirebaseDatabase.getInstance().getReference("User Data");
 
         register.setOnClickListener( new View.OnClickListener() {
             @Override
@@ -67,6 +71,9 @@ public class CreateAccountActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
+                    //add to database
+                    UserData u = new UserData(email,password,"email");
+                    mDatabase.push().setValue(u);
                     Toast.makeText(CreateAccountActivity.this, "Creating account successful!",Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(CreateAccountActivity.this, LoginActivity.class));
                     finish();

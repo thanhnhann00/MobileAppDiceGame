@@ -11,12 +11,16 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import java.text.SimpleDateFormat;
@@ -44,10 +48,10 @@ public class LoginActivity extends AppCompatActivity {
 
         buttonLogin = findViewById(R.id.buttonLogin);
         buttonLogin.setBackgroundColor(Color.parseColor("#010b13"));
-    
+
         auth = FirebaseAuth.getInstance();
         mDatabase = FirebaseDatabase.getInstance().getReference("Logged In History");
-        
+
         // Set a click listener for the login button
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,10 +59,10 @@ public class LoginActivity extends AppCompatActivity {
                 // Retrieve entered username and password
                 String username = editTextUsername.getText().toString();
                 String password = editTextPassword.getText().toString();
-                if (TextUtils.isEmpty(username) || TextUtils.isEmpty(password)){
+                if (TextUtils.isEmpty(username) || TextUtils.isEmpty(password)) {
                     Toast.makeText(LoginActivity.this, "Empty Credentials!", Toast.LENGTH_SHORT).show();
                 } else {
-                    loginUser(username , password);
+                    loginUser(username, password);
                 }
             }
         });
@@ -74,8 +78,8 @@ public class LoginActivity extends AppCompatActivity {
                 finish();  // Close the current activity
             }
         });
-        
-        
+
+
     }
 
     private String getCurrentDateTime() {
@@ -85,30 +89,48 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
-
     private void loginUser(String email, String password) {
-        auth.signInWithEmailAndPassword(email,password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
-            @Override
-            public void onSuccess(AuthResult authResult) {
-                Toast.makeText(LoginActivity.this, "Update the profile " +
-                        "for better experience", Toast.LENGTH_SHORT).show();
-                Toast.makeText(LoginActivity.this, "Login Successful!",Toast.LENGTH_SHORT).show();
-                //capture Email, Method, Date and time of log in
-                String time = getCurrentDateTime();
-                String loginMethod = "email";
-                updateLoggedInHistoryDB(email,time,loginMethod);
-                startActivity(new Intent(LoginActivity.this, MainMenuActivity.class));
-                finish();
-            }
-        });
+        auth.signInWithEmailAndPassword(email, password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+                    @Override
+                    public void onSuccess(AuthResult authResult) {
+                        Toast.makeText(LoginActivity.this, "Update the profile " +
+                                "for better experience", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
+                        //capture Email, Method, Date and time of log in
+                        String time = getCurrentDateTime();
+                        String loginMethod = "email";
+                        updateLoggedInHistoryDB(email, time, loginMethod);
+                        startActivity(new Intent(LoginActivity.this, MainMenuActivity.class));
+                        finish();
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        // Login failed
+                        if (e instanceof FirebaseAuthInvalidUserException) {
+                            // Invalid user (user doesn't exist)
+                            Toast.makeText(LoginActivity.this, "User does not exist.", Toast.LENGTH_SHORT).show();
+                        } else if (e instanceof FirebaseAuthInvalidCredentialsException) {
+                            // Invalid credentials (wrong email or password)
+                            Toast.makeText(LoginActivity.this, "Invalid email or password. Try again!", Toast.LENGTH_SHORT).show();
+                        } else {
+                            // Other errors
+                            Toast.makeText(LoginActivity.this, "Login failed: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
     }
 
-    private void updateLoggedInHistoryDB(String email, String time, String method){
+    private void updateLoggedInHistoryDB(String email, String time, String method) {
         HashMap<String, Object> player = new HashMap<>();
-        player.put("email",email);
-        player.put("loginMethod",method);
-        player.put("time",time);
-        mDatabase.child("ID 1 ").updateChildren(player);
+        player.put("email", email);
+        player.put("loginMethod", method);
+        player.put("time", time);
+        mDatabase.push().setValue(player);
+        //append new child with increment id number
+
+
     }
 
 }
