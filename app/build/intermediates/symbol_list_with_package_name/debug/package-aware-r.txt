@@ -3030,6 +3030,9 @@ drawable d1
 drawable d2
 drawable d3
 drawable d4
+drawable d41
+drawable d42
+drawable d43
 drawable d5
 drawable d6
 drawable design_fab_background

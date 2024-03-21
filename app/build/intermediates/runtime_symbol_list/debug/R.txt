@@ -3029,6 +3029,9 @@ int drawable d1 0x7f080096
 int drawable d2 0x7f080097
 int drawable d3 0x7f080098
 int drawable d4 0x7f080099
+int drawable d41 0x7f08010d
+int drawable d42 0x7f08010e
+int drawable d43 0x7f08010f
 int drawable d5 0x7f08009a
 int drawable d6 0x7f08009b
 int drawable design_fab_background 0x7f08009c

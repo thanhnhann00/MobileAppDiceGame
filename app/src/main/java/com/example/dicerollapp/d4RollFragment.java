@@ -25,7 +25,7 @@ public class d4RollFragment extends Fragment implements SensorEventListener{
     // Store the number of Dice roll animations per execution
     private final int rollAnimations = 40;
     // Store the ids for Dice images in an integer array
-    private final int[] diceImages = new int[]{R.drawable.d1, R.drawable.d2, R.drawable.d3, R.drawable.d4, R.drawable.d5, R.drawable.d6};
+    private final int[] diceImages = new int[]{R.drawable.d41, R.drawable.d42, R.drawable.d43, R.drawable.dice4};
     // Define a Random object
     private final Random random = new Random();
     // Declare View object references
@@ -97,6 +97,7 @@ public class d4RollFragment extends Fragment implements SensorEventListener{
                 try {
                     // In a try block call rollDice() method to show the
                     // dice roll animation. We'll define this method below.
+
                     rollDice();
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -154,37 +155,144 @@ public class d4RollFragment extends Fragment implements SensorEventListener{
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                // In the run() method, use a for loop to iterate
-                // some code to show rolling dice animation
-                int dice1 = 0;
-                int dice2 = 0;
-                for (int i = 0; i < rollAnimations; i++) {
-                    // Generate two random numbers between 1 and 6
-                    // and store them in two integer variables
-                    dice1 = random.nextInt(6) + 1;
-                    dice2 = random.nextInt(6) + 1;
-                    // Get the Image ids from diceImages array
-                    // using the above random numbers as array-index.
-                    // Then, set the ImageViews for die1 and die2 with them.
-                    die1.setImageResource(diceImages[dice1 - 1]);
-                    die2.setImageResource(diceImages[dice2 - 1]);
+                Bundle args = getArguments();
+                if (args == null) {
 
-                    try {
-                        // In a try block sleep the thread for a
-                        // smooth animation
-                        Thread.sleep(delayTime);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
+                    // In the run() method, use a for loop to iterate
+                    // some code to show rolling dice animation
+                    int dice1 = 0;
+                    int dice2 = 0;
+                    for (int i = 0; i < rollAnimations; i++) {
+                        // Generate two random numbers between 1 and 6
+                        // and store them in two integer variables
+                        dice1 = random.nextInt(6) + 1;
+                        dice2 = random.nextInt(6) + 1;
+                        // Get the Image ids from diceImages array
+                        // using the above random numbers as array-index.
+                        // Then, set the ImageViews for die1 and die2 with them.
+                        die1.setImageResource(diceImages[dice1 - 1]);
+                        die2.setImageResource(diceImages[dice2 - 1]);
+
+                        try {
+                            // In a try block sleep the thread for a
+                            // smooth animation
+                            Thread.sleep(delayTime);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    // Add the total of both dice to the history using ViewModel
+                    final String rollResult = "Roll " + ": " + (dice1 + dice2);
+                    requireActivity().runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            viewModel.addToDiceRollHistory(rollResult);
+                        }
+                    });
+                } else {
+                    int numDice = args.getInt("numDice");
+                    switch (numDice) {
+                        case (1): {
+                            // In the run() method, use a for loop to iterate
+                            // some code to show rolling dice animation
+                            int dice1 = 0;
+                            for (int i = 0; i < rollAnimations; i++) {
+                                // Generate two random numbers between 1 and 4
+                                // and store in integer variable
+                                dice1 = random.nextInt(4) + 1;
+                                // Get the Image ids from diceImages array
+                                // using the above random numbers as array-index.
+                                // Then, set the ImageViews for die1 and die2 with them.
+                                die1.setImageResource(diceImages[dice1 - 1]);
+
+                                try {
+                                    // In a try block sleep the thread for a
+                                    // smooth animation
+                                    Thread.sleep(delayTime);
+                                } catch (InterruptedException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                            // Add the total of both dice to the history using ViewModel
+                            final String rollResult = "Roll " + ": " + (dice1);
+                            requireActivity().runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    viewModel.addToDiceRollHistory(rollResult);
+                                }
+                            });
+                        }
+                        case (2): {
+                            // In the run() method, use a for loop to iterate
+                            // some code to show rolling dice animation
+                            int dice1 = 0;
+                            int dice2 = 0;
+                            for (int i = 0; i < rollAnimations; i++) {
+                                // Generate two random numbers between 1 and 4
+                                // and store them in two integer variables
+                                dice1 = random.nextInt(4) + 1;
+                                dice2 = random.nextInt(4) + 1;
+                                // Get the Image ids from diceImages array
+                                // using the above random numbers as array-index.
+                                // Then, set the ImageViews for die1 and die2 with them.
+                                die1.setImageResource(diceImages[dice1 - 1]);
+                                die2.setImageResource(diceImages[dice2 - 1]);
+
+                                try {
+                                    // In a try block sleep the thread for a
+                                    // smooth animation
+                                    Thread.sleep(delayTime);
+                                } catch (InterruptedException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                            // Add the total of both dice to the history using ViewModel
+                            final String rollResult = "Roll " + ": " + (dice1 + dice2);
+                            requireActivity().runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    viewModel.addToDiceRollHistory(rollResult);
+                                }
+                            });
+                        }
+                        case (3): {
+                            // In the run() method, use a for loop to iterate
+                            // some code to show rolling dice animation
+                            int dice1 = 0;
+                            int dice2 = 0;
+                            int dice3 = 0;
+                            for (int i = 0; i < rollAnimations; i++) {
+                                // Generate two random numbers between 1 and 4
+                                // and store them in integer variables
+                                dice1 = random.nextInt(4) + 1;
+                                dice2 = random.nextInt(4) + 1;
+                                dice3 = random.nextInt(4) + 1;
+                                // Get the Image ids from diceImages array
+                                // using the above random numbers as array-index.
+                                // Then, set the ImageViews for die1 and die2 with them.
+                                die1.setImageResource(diceImages[dice1 - 1]);
+                                die2.setImageResource(diceImages[dice2 - 1]);
+                                die3.setImageResource(diceImages[dice3 - 1]);
+
+                                try {
+                                    // In a try block sleep the thread for a
+                                    // smooth animation
+                                    Thread.sleep(delayTime);
+                                } catch (InterruptedException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                            // Add the total of both dice to the history using ViewModel
+                            final String rollResult = "Roll " + ": " + (dice1 + dice2 + dice3);
+                            requireActivity().runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    viewModel.addToDiceRollHistory(rollResult);
+                                }
+                            });
+                        }
                     }
                 }
-                // Add the total of both dice to the history using ViewModel
-                final String rollResult = "Roll " + ": " + (dice1 + dice2);
-                requireActivity().runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        viewModel.addToDiceRollHistory(rollResult);
-                    }
-                });
             }
         };
 
