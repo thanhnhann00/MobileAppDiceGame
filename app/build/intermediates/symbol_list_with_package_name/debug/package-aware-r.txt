@@ -3328,6 +3328,7 @@ id diceOptions
 id diceRadioGroup
 id die1
 id die2
+id die3
 id dimensions
 id direct
 id disableHome
@@ -3834,6 +3835,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_d4_roll
 layout fragment_dice_history
 layout fragment_dice_roll
 layout fragment_dice_selection

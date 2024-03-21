@@ -3327,6 +3327,7 @@ int id diceOptions 0x7f0900b3
 int id diceRadioGroup 0x7f0900b4
 int id die1 0x7f0900b5
 int id die2 0x7f0900b6
+int id die3 0x7f090225
 int id dimensions 0x7f0900b7
 int id direct 0x7f0900b8
 int id disableHome 0x7f0900b9
@@ -3833,6 +3834,7 @@ int layout design_navigation_menu 0x7f0c0031
 int layout design_navigation_menu_item 0x7f0c0032
 int layout design_text_input_end_icon 0x7f0c0033
 int layout design_text_input_start_icon 0x7f0c0034
+int layout fragment_d4_roll 0x7f0c0078
 int layout fragment_dice_history 0x7f0c0035
 int layout fragment_dice_roll 0x7f0c0036
 int layout fragment_dice_selection 0x7f0c0037

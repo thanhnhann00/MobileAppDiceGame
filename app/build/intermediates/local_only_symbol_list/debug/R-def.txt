@@ -61,6 +61,7 @@ id diceOptions
 id diceRadioGroup
 id die1
 id die2
+id die3
 id drawer_layout
 id editTextEmail
 id editTextPassword
@@ -87,6 +88,7 @@ layout activity_main
 layout activity_main_menu
 layout activity_minigame
 layout activity_settings
+layout fragment_d4_roll
 layout fragment_dice_history
 layout fragment_dice_roll
 layout fragment_dice_selection

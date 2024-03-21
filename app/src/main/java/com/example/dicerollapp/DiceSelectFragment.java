@@ -26,7 +26,7 @@ public class DiceSelectFragment extends Fragment {
 
     private final int[] diceOptions = new int[]{R.drawable.dice4, R.drawable.d6, R.drawable.dice8, R.drawable.dice10, R.drawable.dice12, R.drawable.dice20};
     // Define a Random object
-    
+
     private ImageButton dice4;
     private ImageButton d6;
     private ImageButton dice8;
@@ -102,30 +102,58 @@ public class DiceSelectFragment extends Fragment {
                 View radioButton = diceRadioGroup.findViewById(radioButtonID);
                 int numDice = diceRadioGroup.indexOfChild(radioButton);
 
+                LinearLayout layout = rootView.findViewById(R.id.diceOptions);
+                layout.removeAllViews();
+
+                // Add DiceRollFragment to LinearLayout
+                FragmentManager fm = requireActivity().getSupportFragmentManager();
+                FragmentTransaction fr = fm.beginTransaction();
+
                 switch (diceSize) {
+
+                    case 4:
+                        d4RollFragment d4RollFragment = new d4RollFragment();
+                        fr.add(layout.getId(), d4RollFragment); // Add DiceRollFragment to LinearLayout
+                        fr.addToBackStack(null);
+                        fr.commit();
+                        break;
                     case 6:
-
-                        LinearLayout layout = rootView.findViewById(R.id.diceOptions);
-                        layout.removeAllViews();
-
-                        // Add DiceRollFragment to LinearLayout
                         DiceRollFragment diceRollFragment = new DiceRollFragment();
-                        FragmentManager fm = requireActivity().getSupportFragmentManager();
-                        FragmentTransaction fr = fm.beginTransaction();
+                        fr.add(layout.getId(), diceRollFragment); // Add DiceRollFragment to LinearLayout
+                        fr.addToBackStack(null); //Adds the transaction to the back stack
+                        fr.commit();
+                        break;
+                    case 8:
+                        /*
                         fr.add(layout.getId(), diceRollFragment); // Add DiceRollFragment to LinearLayout
                         fr.addToBackStack(null);
                         fr.commit();
-
-
+                         */
                         break;
-                    case 1:
-                        //fragment = new DiceHistoryFragment();
+                    case 10:
+                        /*
+                        fr.add(layout.getId(), diceRollFragment); // Add DiceRollFragment to LinearLayout
+                        fr.addToBackStack(null);
+                        fr.commit();
+                         */
                         break;
-                    case 2:
-                        //ragment = new DiceSelectFragment();
+                    case 12:
+                        /*
+                        fr.add(layout.getId(), diceRollFragment); // Add DiceRollFragment to LinearLayout
+                        fr.addToBackStack(null);
+                        fr.commit();
+                         */
+                        break;
+                    case 20:
+                        /*
+                        fr.add(layout.getId(), diceRollFragment); // Add DiceRollFragment to LinearLayout
+                        fr.addToBackStack(null);
+                        fr.commit();
+                         */
                         break;
 
                     default:
+                        fr.commit();
                         break;
                 }
 
