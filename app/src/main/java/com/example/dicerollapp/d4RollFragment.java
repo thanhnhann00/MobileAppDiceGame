@@ -46,8 +46,13 @@ public class d4RollFragment extends Fragment implements SensorEventListener{
     private static final float SHAKE_THRESHOLD = 5.0f;
     private long lastShakeTime;
 
-    public d4RollFragment() {
-        // Required empty public constructor
+    //constructor to pass in the number of dice
+    public static d4RollFragment newInstance(int NumDice) {
+        d4RollFragment fragment = new d4RollFragment();
+        Bundle args = new Bundle();
+        args.putInt("numDice", NumDice); // Note: using the passed argument
+        fragment.setArguments(args);
+        return fragment;
     }
 
     @Override
@@ -61,6 +66,27 @@ public class d4RollFragment extends Fragment implements SensorEventListener{
         die1 = view.findViewById(R.id.die1);
         die2 = view.findViewById(R.id.die2);
         die3 = view.findViewById(R.id.die3);
+
+        //If args were passed to the fragment, then run this code to get right amount of dice
+        Bundle args = getArguments();
+        if (args != null) {
+            int numDice = args.getInt("numDice");
+            switch (numDice) {
+                case(1): {
+                    die2.setVisibility(View.GONE);
+                    die3.setVisibility(View.GONE);
+                    break;
+                }
+                case(2): {
+                    die3.setVisibility(View.GONE);
+                    break;
+                }
+                default: {
+                    break;
+                }
+            }
+
+        }
         // Instantiate the MediaPlayer object
         mp = MediaPlayer.create(requireContext(), R.raw.roll);
         // Attach OnClickListener with diceContainer

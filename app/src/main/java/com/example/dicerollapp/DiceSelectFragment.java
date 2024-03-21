@@ -100,7 +100,8 @@ public class DiceSelectFragment extends Fragment {
                 //checks which radioButton is selected upon confirmation
                 int radioButtonID = diceRadioGroup.getCheckedRadioButtonId();
                 View radioButton = diceRadioGroup.findViewById(radioButtonID);
-                int numDice = diceRadioGroup.indexOfChild(radioButton);
+                int numDice = diceRadioGroup.indexOfChild(radioButton)+1;
+                Log.d("Dice Count:", "pain " + numDice);
 
                 LinearLayout layout = rootView.findViewById(R.id.diceOptions);
                 layout.removeAllViews();
@@ -112,7 +113,7 @@ public class DiceSelectFragment extends Fragment {
                 switch (diceSize) {
 
                     case 4:
-                        d4RollFragment d4RollFragment = new d4RollFragment();
+                        d4RollFragment d4RollFragment = com.example.dicerollapp.d4RollFragment.newInstance(numDice);
                         fr.add(layout.getId(), d4RollFragment); // Add DiceRollFragment to LinearLayout
                         fr.addToBackStack(null);
                         fr.commit();
