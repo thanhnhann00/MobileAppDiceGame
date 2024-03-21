@@ -6,15 +6,19 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import java.util.Objects;
 
@@ -22,7 +26,7 @@ public class DiceSelectFragment extends Fragment {
 
     private final int[] diceOptions = new int[]{R.drawable.dice4, R.drawable.d6, R.drawable.dice8, R.drawable.dice10, R.drawable.dice12, R.drawable.dice20};
     // Define a Random object
-
+    
     private ImageButton dice4;
     private ImageButton d6;
     private ImageButton dice8;
@@ -33,6 +37,9 @@ public class DiceSelectFragment extends Fragment {
 
     private RadioGroup diceRadioGroup;
     private int diceCount = 1;
+
+    private Button selectButton;
+
     public DiceSelectFragment() {
     }
 
@@ -48,18 +55,12 @@ public class DiceSelectFragment extends Fragment {
         dice12 = rootView.findViewById(R.id.dice12);
         dice20 = rootView.findViewById(R.id.dice20);
         diceRadioGroup = rootView.findViewById(R.id.diceRadioGroup);
+        selectButton = rootView.findViewById(R.id.selectDiceButton);
+
 
        dice4.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                diceSize = 4;
-                /*
-                // Navigate back to the main page (MainActivity)
-                Intent intent = new Intent(getActivity(), MainActivity.class);
-                startActivity(intent);
-                requireActivity().finish();  // Close the current activity
-                */
-            }
+            public void onClick(View view) {diceSize = 4;}
         });
         d6.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,33 +93,42 @@ public class DiceSelectFragment extends Fragment {
             }
         });
 
-        //change dice count based on radioGroup
-        diceRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        selectButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
+            public void onClick(View view) {
 
-                //gets the index of the child radioButton
-            int radioButtonID = group.getCheckedRadioButtonId();
-            View radioButton = group.findViewById(radioButtonID);
-            int idx = group.indexOfChild(radioButton);
-            //Log.d("index", "Selected index is now " + idx);
+                //checks which radioButton is selected upon confirmation
+                int radioButtonID = diceRadioGroup.getCheckedRadioButtonId();
+                View radioButton = diceRadioGroup.findViewById(radioButtonID);
+                int numDice = diceRadioGroup.indexOfChild(radioButton);
 
-            //assigns the amount of dice depending on the selected option
-            switch (idx) {
-                case (0):
-                    diceCount = 1;
-                    //Log.d("DiceCount" , "Dice is now " + diceCount);
-                    break;
-                case (1):
-                    diceCount = 2;
-                    break;
-                case(2):
-                    diceCount = 3;
-                    break;
+                switch (diceSize) {
+                    case 6:
 
-                default:
-                    break;
+                        LinearLayout layout = rootView.findViewById(R.id.diceOptions);
+                        layout.removeAllViews();
+
+                        // Add DiceRollFragment to LinearLayout
+                        DiceRollFragment diceRollFragment = new DiceRollFragment();
+                        FragmentManager fm = requireActivity().getSupportFragmentManager();
+                        FragmentTransaction fr = fm.beginTransaction();
+                        fr.add(layout.getId(), diceRollFragment); // Add DiceRollFragment to LinearLayout
+                        fr.addToBackStack(null);
+                        fr.commit();
+
+
+                        break;
+                    case 1:
+                        //fragment = new DiceHistoryFragment();
+                        break;
+                    case 2:
+                        //ragment = new DiceSelectFragment();
+                        break;
+
+                    default:
+                        break;
                 }
+
             }
         });
 
