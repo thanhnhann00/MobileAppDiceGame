@@ -2999,6 +2999,7 @@ drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
 drawable back
+drawable back_button
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3145,6 +3146,7 @@ drawable rolling_dice_background
 drawable select
 drawable settings_icon
 drawable settings_selection
+drawable skip_icon
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3221,6 +3223,9 @@ id activity_chooser_view_content
 id add
 id adjust_height
 id adjust_width
+id ai_dice_imageview
+id ai_dice_layout
+id ai_score_textview
 id alertTitle
 id aligned
 id all
@@ -3393,6 +3398,8 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
+id header
+id headerImage
 id header_title
 id hideable
 id historyTable
@@ -3558,12 +3565,14 @@ id right
 id rightToLeft
 id right_icon
 id right_side
+id roll_dice_button
 id rounded
 id row_index_key
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
 id scale
+id scores_textview
 id screen
 id scroll
 id scrollIndicatorDown
@@ -3592,6 +3601,7 @@ id showHome
 id showTitle
 id sin
 id skipCollapsed
+id skip_turn_button
 id skipped
 id slide
 id smallDice
@@ -3679,6 +3689,9 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id user_dice_imageview
+id user_dice_layout
+id user_score_textview
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3690,6 +3703,7 @@ id visible
 id visible_removing_fragment_view_tag
 id west
 id wide
+id winner_textview
 id withText
 id with_icon
 id withinBounds
@@ -3843,6 +3857,8 @@ layout fragment_dice_history
 layout fragment_dice_roll
 layout fragment_dice_selection
 layout fragment_login
+layout fragment_minigame_winner
+layout header_layout
 layout list_view_item_row
 layout m3_alert_dialog
 layout m3_alert_dialog_actions

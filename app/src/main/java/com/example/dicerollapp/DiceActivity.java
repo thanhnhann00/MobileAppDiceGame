@@ -31,7 +31,7 @@ public class DiceActivity extends AppCompatActivity {
     private String[] mNavigationDrawerItemTitles;
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
-    Toolbar toolbar;
+    private Toolbar toolbar;
     private CharSequence mDrawerTitle;
     private CharSequence mTitle;
     ActionBarDrawerToggle toggle;
@@ -133,17 +133,6 @@ public class DiceActivity extends AppCompatActivity {
             Log.e("DiceActivity", "Error in creating fragment");
         }
     }
-
-//    @Override
-//    public void onBackPressed() {
-//        FragmentManager fragmentManager = getSupportFragmentManager();
-//        Fragment currentFragment = fragmentManager.findFragmentById(R.id.content_frame);
-//
-//        // Check if the current fragment is not the DiceHistoryFragment
-//        if (!(currentFragment instanceof DiceHistoryFragment)) {
-//            super.onBackPressed();
-//        }
-//    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

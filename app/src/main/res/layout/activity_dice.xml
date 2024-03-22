@@ -1,7 +1,6 @@
 <androidx.drawerlayout.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,7 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
 
         <LinearLayout
             android:id="@+id/container_toolbar"
@@ -23,42 +21,43 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="#ba160c"
+                android:background="#203a32"
                 android:elevation="4dp"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
                 app:layout_scrollFlags="scroll|enterAlways">
-
-            <ImageButton
-                android:id="@+id/button_previous"
-                android:background="@android:color/transparent"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="360dp"
-                android:importantForAccessibility="no"
-                android:scaleType="centerInside"
-                android:src="@drawable/go_back"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
             </androidx.appcompat.widget.Toolbar>
-            <Button
-                android:id="@+id/button_logout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="300dp"
-                android:text="Log out" />
 
             <FrameLayout
                 android:id="@+id/content_frame"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="start"/>
+
         </LinearLayout>
-
-
     </LinearLayout>
-    <!-- Navigation Drawer -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <ImageButton
+            android:id="@+id/button_previous"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:importantForAccessibility="no"
+            android:scaleType="centerInside"
+            android:src="@drawable/go_back" />
+
+        <Button
+            android:id="@+id/button_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log out" />
+    </LinearLayout>
+
     <ListView
         android:id="@+id/left_drawer"
         android:layout_width="240dp"
@@ -70,3 +69,5 @@
         android:dividerHeight="1dp" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
+
+

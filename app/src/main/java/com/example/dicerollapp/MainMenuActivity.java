@@ -9,6 +9,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.dicerollapp.UI_elements.Activities.DiceSelectionActivity;
+import com.example.dicerollapp.UI_elements.Activities.MiniGameActivity;
+import com.example.dicerollapp.UI_elements.Activities.SettingsActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainMenuActivity extends AppCompatActivity {

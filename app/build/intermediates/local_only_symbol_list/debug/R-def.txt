@@ -36,14 +36,11 @@ drawable ic_launcher_foreground
 drawable minigame_icon
 drawable minigame_selection
 drawable pngimg_com___dice_png41
-drawable roll_dice_icon
 drawable rolling_dice_background
 drawable select
 drawable settings_icon
 drawable settings_selection
 drawable skip_icon
-drawable skip_icon_
-drawable skip_turn_button
 id ai_dice_imageview
 id ai_dice_layout
 id ai_score_textview

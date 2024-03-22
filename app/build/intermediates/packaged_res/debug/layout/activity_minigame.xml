@@ -1,27 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#20FF8C"
-    android:gravity="center_vertical"
-    android:orientation="vertical"
-    android:padding="0dp">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        layout="@layout/header_layout"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
 
     <ImageButton
         android:id="@+id/button_previous"
         android:background="@android:color/transparent"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="300dp"
+        android:layout_marginStart="360dp"
         android:importantForAccessibility="no"
         android:scaleType="centerInside"
-        android:src="@drawable/go_back"
+        android:src="@drawable/back_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- User dice -->
+    <LinearLayout
+        android:id="@+id/user_dice_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/user_score_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Score: 0"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/user_dice_imageview"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/d6" />
+    </LinearLayout>
+
+    <!-- AI dice -->
+    <LinearLayout
+        android:id="@+id/ai_dice_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_dice_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ai_score_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI Score: 0"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/ai_dice_imageview"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/d6" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/roll_dice_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_below="@id/ai_dice_layout"
+        android:text="Roll Dice"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        style="@style/BlackButton"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/skip_turn_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ai_dice_layout"
+        android:layout_toEndOf="@id/roll_dice_button"
+        android:layout_marginStart="30dp"
+        android:text="Skip Turn"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        style="@style/BlackButton"/>
+
+
+</RelativeLayout>
