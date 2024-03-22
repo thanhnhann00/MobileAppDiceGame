@@ -1,4 +1,4 @@
-package com.example.dicerollapp;
+package com.example.dicerollapp.UI_elements.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,9 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.dicerollapp.MainMenuActivity;
+import com.example.dicerollapp.R;
 
 public class DiceSelectionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
