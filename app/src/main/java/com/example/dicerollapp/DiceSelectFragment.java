@@ -131,22 +131,23 @@ public class DiceSelectFragment extends Fragment {
                         fr.commit();
                         break;
                     case 10:
-                        /*
-                        fr.add(layout.getId(), diceRollFragment); // Add DiceRollFragment to LinearLayout
+                        d10RollFragment d10RollFragment = com.example.dicerollapp.d10RollFragment.newInstance(numDice);
+                        fr.add(layout.getId(), d10RollFragment); // Add DiceRollFragment to LinearLayout
                         fr.addToBackStack(null);
                         fr.commit();
-                         */
                         break;
                     case 12:
                         /*
-                        fr.add(layout.getId(), diceRollFragment); // Add DiceRollFragment to LinearLayout
+                        d12RollFragment d12RollFragment = com.example.dicerollapp.d12RollFragment.newInstance(numDice);
+                        fr.add(layout.getId(), d12RollFragment); // Add DiceRollFragment to LinearLayout
                         fr.addToBackStack(null);
                         fr.commit();
                          */
                         break;
                     case 20:
                         /*
-                        fr.add(layout.getId(), diceRollFragment); // Add DiceRollFragment to LinearLayout
+                        d20RollFragment d20RollFragment = com.example.dicerollapp.d20RollFragment.newInstance(numDice);
+                        fr.add(layout.getId(), d20RollFragment); // Add DiceRollFragment to LinearLayout
                         fr.addToBackStack(null);
                         fr.commit();
                          */

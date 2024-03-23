@@ -85,6 +85,8 @@ public class DiceRollFragment extends Fragment implements SensorEventListener{
                     break;
                 }
             }
+        } else {
+            die3.setVisibility(View.GONE);
         }
 
         // Instantiate the MediaPlayer object

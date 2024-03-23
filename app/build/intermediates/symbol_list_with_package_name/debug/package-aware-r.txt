@@ -3028,6 +3028,15 @@ drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable d1
+drawable d101
+drawable d102
+drawable d103
+drawable d104
+drawable d105
+drawable d106
+drawable d107
+drawable d108
+drawable d109
 drawable d2
 drawable d3
 drawable d4
@@ -3342,6 +3351,9 @@ id diceContainer
 id diceOptions
 id diceRadioGroup
 id die1
+id die101
+id die102
+id die103
 id die2
 id die3
 id die81
@@ -3862,6 +3874,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_d10_roll
 layout fragment_d4_roll
 layout fragment_d8_roll
 layout fragment_dice_history
