@@ -4,7 +4,7 @@
             "outputFile": "com.example.dicerollapp-mergeDebugResources-37:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\caches\\transforms-3\\a5560e8db1aa3b65a35b064c8e5d78d2\\transformed\\material-1.11.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+                    "source": "C:\\Users\\Alex\\.gradle\\caches\\transforms-3\\a5560e8db1aa3b65a35b064c8e5d78d2\\transformed\\material-1.11.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

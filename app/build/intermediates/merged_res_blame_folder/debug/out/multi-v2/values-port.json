@@ -4,7 +4,7 @@
             "outputFile": "com.example.dicerollapp-mergeDebugResources-37:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ALEXIS MARTINEZ\\.gradle\\caches\\transforms-3\\55aec724fdd97262465e3a2c8558b990\\transformed\\appcompat-1.6.1\\res\\values-port\\values-port.xml",
+                    "source": "C:\\Users\\Alex\\.gradle\\caches\\transforms-3\\55aec724fdd97262465e3a2c8558b990\\transformed\\appcompat-1.6.1\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

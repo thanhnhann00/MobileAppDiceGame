@@ -3036,6 +3036,13 @@ drawable d42
 drawable d43
 drawable d5
 drawable d6
+drawable d81
+drawable d82
+drawable d83
+drawable d84
+drawable d85
+drawable d86
+drawable d87
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3337,6 +3344,9 @@ id diceRadioGroup
 id die1
 id die2
 id die3
+id die81
+id die82
+id die83
 id dimensions
 id direct
 id disableHome
@@ -3853,6 +3863,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_d4_roll
+layout fragment_d8_roll
 layout fragment_dice_history
 layout fragment_dice_roll
 layout fragment_dice_selection

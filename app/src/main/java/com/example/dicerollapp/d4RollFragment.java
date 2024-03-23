@@ -155,42 +155,10 @@ public class d4RollFragment extends Fragment implements SensorEventListener{
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
+
                 Bundle args = getArguments();
-                if (args == null) {
-
-                    // In the run() method, use a for loop to iterate
-                    // some code to show rolling dice animation
-                    int dice1 = 0;
-                    int dice2 = 0;
-                    for (int i = 0; i < rollAnimations; i++) {
-                        // Generate two random numbers between 1 and 6
-                        // and store them in two integer variables
-                        dice1 = random.nextInt(6) + 1;
-                        dice2 = random.nextInt(6) + 1;
-                        // Get the Image ids from diceImages array
-                        // using the above random numbers as array-index.
-                        // Then, set the ImageViews for die1 and die2 with them.
-                        die1.setImageResource(diceImages[dice1 - 1]);
-                        die2.setImageResource(diceImages[dice2 - 1]);
-
-                        try {
-                            // In a try block sleep the thread for a
-                            // smooth animation
-                            Thread.sleep(delayTime);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                    // Add the total of both dice to the history using ViewModel
-                    final String rollResult = "Roll " + ": " + (dice1 + dice2);
-                    requireActivity().runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            viewModel.addToDiceRollHistory(rollResult);
-                        }
-                    });
-                } else {
-                    int numDice = args.getInt("numDice");
+                assert args != null;
+                int numDice = args.getInt("numDice");
                     switch (numDice) {
                         case (1): {
                             // In the run() method, use a for loop to iterate
@@ -293,7 +261,7 @@ public class d4RollFragment extends Fragment implements SensorEventListener{
                         }
                     }
                 }
-            }
+
         };
 
         // Define a Thread object and pass the runnable object
