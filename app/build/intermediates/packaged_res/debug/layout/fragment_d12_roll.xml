@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/diceContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rolling_dice_background"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".DiceActivity">
+
+    <TextView
+        android:id="@+id/tvHelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Touch on the screen to start rolling."
+        android:textColor="#111"
+        android:textSize="24sp" />
+
+    <!-- Add a LinearLayout to display two vertically aligned die images -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/die121"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/dice12" />
+
+        <ImageView
+            android:id="@+id/die122"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/dice12" />
+
+        <ImageView
+            android:id="@+id/die123"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/dice12" />
+    </LinearLayout>
+</LinearLayout>

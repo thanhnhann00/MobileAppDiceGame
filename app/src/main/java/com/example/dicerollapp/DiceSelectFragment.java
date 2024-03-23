@@ -137,12 +137,10 @@ public class DiceSelectFragment extends Fragment {
                         fr.commit();
                         break;
                     case 12:
-                        /*
                         d12RollFragment d12RollFragment = com.example.dicerollapp.d12RollFragment.newInstance(numDice);
                         fr.add(layout.getId(), d12RollFragment); // Add DiceRollFragment to LinearLayout
                         fr.addToBackStack(null);
                         fr.commit();
-                         */
                         break;
                     case 20:
                         /*

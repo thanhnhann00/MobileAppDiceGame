@@ -3036,6 +3036,17 @@ int drawable d106 0x7f08011e
 int drawable d107 0x7f08011f
 int drawable d108 0x7f080120
 int drawable d109 0x7f080121
+int drawable d121 0x7f080122
+int drawable d1210 0x7f080123
+int drawable d1211 0x7f080124
+int drawable d122 0x7f080125
+int drawable d123 0x7f080126
+int drawable d124 0x7f080127
+int drawable d125 0x7f080128
+int drawable d126 0x7f080129
+int drawable d127 0x7f08012a
+int drawable d128 0x7f08012b
+int drawable d129 0x7f08012c
 int drawable d2 0x7f080098
 int drawable d3 0x7f080099
 int drawable d4 0x7f08009a
@@ -3353,6 +3364,9 @@ int id die1 0x7f0900b8
 int id die101 0x7f090235
 int id die102 0x7f090236
 int id die103 0x7f090237
+int id die121 0x7f090238
+int id die122 0x7f090239
+int id die123 0x7f09023a
 int id die2 0x7f0900b9
 int id die3 0x7f0900ba
 int id die81 0x7f090232
@@ -3874,6 +3888,7 @@ int layout design_navigation_menu_item 0x7f0c0032
 int layout design_text_input_end_icon 0x7f0c0033
 int layout design_text_input_start_icon 0x7f0c0034
 int layout fragment_d10_roll 0x7f0c007c
+int layout fragment_d12_roll 0x7f0c007d
 int layout fragment_d4_roll 0x7f0c0035
 int layout fragment_d8_roll 0x7f0c007b
 int layout fragment_dice_history 0x7f0c0036
