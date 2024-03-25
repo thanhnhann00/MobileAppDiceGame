@@ -1,6 +1,7 @@
 package com.example.dicerollapp.UI_elements.Activities;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -14,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.dicerollapp.MainMenuActivity;
 import com.example.dicerollapp.R;
+import com.example.dicerollapp.UI_elements.Fragments.MiniGameRulesFragment;
 import com.example.dicerollapp.UI_elements.Fragments.MiniGameWinnerFragment;
 
 import java.util.Random;
@@ -30,11 +32,25 @@ public class MiniGameActivity extends AppCompatActivity {
     private final Random random = new Random();
     private final Handler handler = new Handler();
     private boolean aiTurn = false;
+    private static final String PREFS_NAME = "MyPrefsFile";
+    private static final String GAME_RULES_SHOWN = "GameRulesShown";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_minigame);
+
+        // Check if game rules have been shown before
+        SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+        boolean gameRulesShown = settings.getBoolean(GAME_RULES_SHOWN, false);
+        if (gameRulesShown) {
+            // Show game rules fragment
+            showGameRulesFragment();
+            // Mark game rules as shown
+            SharedPreferences.Editor editor = settings.edit();
+            editor.putBoolean(GAME_RULES_SHOWN, true);
+            editor.apply();
+        }
 
         // Initialize views
         userDiceImageView = findViewById(R.id.user_dice_imageview);
@@ -75,18 +91,13 @@ public class MiniGameActivity extends AppCompatActivity {
         skipTurnButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (userScore >= 19 && userScore <= 21) {
-                    aiTurn = true;
-                    rollAIDice();
-                    updateScores();
-                    checkWinner();
-                } else if (aiScore < userScore && aiScore < 21) {
+                if (aiScore <= userScore && aiScore < 21) {
                     aiTurn = true;
                     rollAIDice();
                     updateScores();
                     checkWinner();
                 } else {
-                    Toast.makeText(MiniGameActivity.this, "You can only skip your turn when your score is between 19 and 21.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MiniGameActivity.this, "You can only skip your turn when your score is higher than the AIs'.", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -101,20 +112,8 @@ public class MiniGameActivity extends AppCompatActivity {
             // User's score is 21 or above, no need for AI to roll
             checkWinner();
             return;
-        } else if (aiScore >= 19 && aiScore <= 21) {
-            // AI is close to 21, decide whether to skip or roll again
-            if (random.nextBoolean()) {
-                // AI skips turn
-                Toast.makeText(MiniGameActivity.this, "AI skips its turn.", Toast.LENGTH_SHORT).show();
-                aiTurn = false; // User's turn
-            } else {
-                // AI rolls again
-                rollAIDice();
-                updateScores();
-                checkWinner();
-            }
-        } else if (aiScore < userScore || aiScore == userScore) {
-            // AI's score is less than user's and less than 21, roll again
+        } else if (aiScore < 21 && userScore > aiScore) {
+            // AI rolls again
             rollAIDice();
             updateScores();
             checkWinner();
@@ -167,17 +166,17 @@ public class MiniGameActivity extends AppCompatActivity {
         }, 10000);
     }
 
+
+    private void showGameRulesFragment() {
+        MiniGameRulesFragment gameRulesFragment = MiniGameRulesFragment.newInstance();
+        gameRulesFragment.show(getSupportFragmentManager(), "game_rules_fragment");
+    }
+
     private void checkWinner() {
-        if (userScore > 21 && aiScore > 21) {
-            showWinnerFragment("It's a draw!", userScore, aiScore);
-        } else if (userScore > 21) {
+        if (userScore > 21 || aiScore == 21) {
             showWinnerFragment("AI", userScore, aiScore);
-        } else if (aiScore > 21) {
+        } else if (aiScore > 21 || userScore == 21) {
             showWinnerFragment("You", userScore, aiScore);
-        } else if (userScore == 21) {
-            showWinnerFragment("You", userScore, aiScore);
-        } else if (aiScore == 21) {
-            showWinnerFragment("AI", userScore, aiScore);
         } else {
             return;
         }

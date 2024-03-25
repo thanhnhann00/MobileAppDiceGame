@@ -12,6 +12,8 @@ import androidx.fragment.app.DialogFragment;
 
 import com.example.dicerollapp.R;
 
+import java.util.Objects;
+
 public class MiniGameWinnerFragment extends DialogFragment {
     private String winnerName;
     private int userScore;
@@ -52,7 +54,11 @@ public class MiniGameWinnerFragment extends DialogFragment {
         TextView winnerTextView = view.findViewById(R.id.winner_textview);
         TextView scoresTextView = view.findViewById(R.id.scores_textview);
 
-        winnerTextView.setText(winnerName + " wins!");
+        if(Objects.equals(winnerName, "You")) {
+            winnerTextView.setText(winnerName + " won!");
+        } else{
+            winnerTextView.setText(winnerName + " wins!");
+        }
         scoresTextView.setText("Final scores:\nYou: " + userScore + "\nAI: " + aiScore);
     }
 }
