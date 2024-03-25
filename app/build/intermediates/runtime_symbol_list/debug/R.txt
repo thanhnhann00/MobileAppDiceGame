@@ -3567,6 +3567,7 @@ int id right_side 0x7f09019e
 int id roll_dice_button 0x7f09019f
 int id rounded 0x7f0901a0
 int id row_index_key 0x7f0901a1
+int id rules_textview 0x7f090232
 int id save_non_transition_alpha 0x7f0901a2
 int id save_overlay_view 0x7f0901a3
 int id sawtooth 0x7f0901a4
@@ -3855,6 +3856,7 @@ int layout fragment_d4_roll 0x7f0c0035
 int layout fragment_dice_history 0x7f0c0036
 int layout fragment_dice_roll 0x7f0c0037
 int layout fragment_dice_selection 0x7f0c0038
+int layout fragment_game_rules 0x7f0c007b
 int layout fragment_login 0x7f0c0039
 int layout fragment_minigame_winner 0x7f0c003a
 int layout header_layout 0x7f0c003b

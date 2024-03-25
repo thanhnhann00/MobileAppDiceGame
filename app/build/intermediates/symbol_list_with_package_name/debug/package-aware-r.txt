@@ -3568,6 +3568,7 @@ id right_side
 id roll_dice_button
 id rounded
 id row_index_key
+id rules_textview
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3856,6 +3857,7 @@ layout fragment_d4_roll
 layout fragment_dice_history
 layout fragment_dice_roll
 layout fragment_dice_selection
+layout fragment_game_rules
 layout fragment_login
 layout fragment_minigame_winner
 layout header_layout
