@@ -3306,6 +3306,7 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id buttonCreateAccount
 id buttonDefaultDices
+id buttonDeleteAccount
 id buttonLogin
 id buttonMainMenu
 id buttonMiniGame

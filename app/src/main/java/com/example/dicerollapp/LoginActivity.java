@@ -34,6 +34,9 @@ public class LoginActivity extends AppCompatActivity {
     private Button buttonLogin;
     private FirebaseAuth auth;
     private DatabaseReference mDatabase;
+    public static String currentUser;
+
+    public boolean loggedIn = false ;
 
     private static final String TAG = LoginActivity.class.getSimpleName();
 
@@ -93,13 +96,17 @@ public class LoginActivity extends AppCompatActivity {
         auth.signInWithEmailAndPassword(email, password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                     @Override
                     public void onSuccess(AuthResult authResult) {
+                        loggedIn = true;
+                        String loginMethod = "email";
+
                         Toast.makeText(LoginActivity.this, "Update the profile " +
                                 "for better experience", Toast.LENGTH_SHORT).show();
                         Toast.makeText(LoginActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
                         //capture Email, Method, Date and time of log in
                         String time = getCurrentDateTime();
-                        String loginMethod = "email";
+
                         updateLoggedInHistoryDB(email, time, loginMethod);
+                        currentUser = email;
                         startActivity(new Intent(LoginActivity.this, MainMenuActivity.class));
                         finish();
                     }

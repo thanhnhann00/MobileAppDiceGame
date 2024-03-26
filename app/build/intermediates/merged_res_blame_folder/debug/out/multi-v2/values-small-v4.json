@@ -4,7 +4,7 @@
             "outputFile": "com.example.dicerollapp-mergeDebugResources-37:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Alex\\.gradle\\caches\\transforms-3\\a5560e8db1aa3b65a35b064c8e5d78d2\\transformed\\material-1.11.0\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\nhanp\\.gradle\\caches\\transforms-3\\a5560e8db1aa3b65a35b064c8e5d78d2\\transformed\\material-1.11.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

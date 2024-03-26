@@ -24,8 +24,9 @@
         <activity android:name=".DiceActivity" />
         <activity android:name=".CreateAccountActivity"/>
         <activity android:name=".MainMenuActivity"/>
-        <activity android:name=".DiceSelectionActivity"/>
-        <activity android:name=".MiniGameActivity"/>
-        <activity android:name=".SettingsActivity"/>
+        <activity android:name=".UI_elements.Activities.DiceSelectionActivity"/>
+        <activity android:name=".UI_elements.Activities.MiniGameActivity"/>
+        <activity android:name=".UI_elements.Activities.SettingsActivity"/>
+
     </application>
 </manifest>

@@ -55,9 +55,9 @@
         <activity android:name="com.example.dicerollapp.DiceActivity" />
         <activity android:name="com.example.dicerollapp.CreateAccountActivity" />
         <activity android:name="com.example.dicerollapp.MainMenuActivity" />
-        <activity android:name="com.example.dicerollapp.DiceSelectionActivity" />
-        <activity android:name="com.example.dicerollapp.MiniGameActivity" />
-        <activity android:name="com.example.dicerollapp.SettingsActivity" />
+        <activity android:name="com.example.dicerollapp.UI_elements.Activities.DiceSelectionActivity" />
+        <activity android:name="com.example.dicerollapp.UI_elements.Activities.MiniGameActivity" />
+        <activity android:name="com.example.dicerollapp.UI_elements.Activities.SettingsActivity" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
