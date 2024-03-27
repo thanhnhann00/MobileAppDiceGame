@@ -27,6 +27,7 @@
         <activity android:name=".UI_elements.Activities.DiceSelectionActivity"/>
         <activity android:name=".UI_elements.Activities.MiniGameActivity"/>
         <activity android:name=".UI_elements.Activities.SettingsActivity"/>
+        <activity android:name=".PasswordResetActivity"/>
 
     </application>
 </manifest>

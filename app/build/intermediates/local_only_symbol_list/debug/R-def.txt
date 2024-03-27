@@ -96,8 +96,10 @@ id buttonDeleteAccount
 id buttonLogin
 id buttonMainMenu
 id buttonMiniGame
+id buttonPrevious
 id buttonQuickPlay
 id buttonRegister
+id buttonReset
 id buttonSelect
 id buttonSettings
 id button_logout
@@ -130,7 +132,9 @@ id die81
 id die82
 id die83
 id drawer_layout
+id editEmail
 id editTextEmail
+id editTextForgotPassword
 id editTextPassword
 id editTextUsername
 id fragmentContainer
@@ -164,6 +168,7 @@ layout activity_dice_selection
 layout activity_main
 layout activity_main_menu
 layout activity_minigame
+layout activity_password_reset
 layout activity_settings
 layout fragment_d10_roll
 layout fragment_d12_roll
@@ -173,8 +178,8 @@ layout fragment_d8_roll
 layout fragment_dice_history
 layout fragment_dice_roll
 layout fragment_dice_selection
-layout fragment_game_rules
 layout fragment_login
+layout fragment_minigame_rules
 layout fragment_minigame_winner
 layout header_layout
 layout list_view_item_row

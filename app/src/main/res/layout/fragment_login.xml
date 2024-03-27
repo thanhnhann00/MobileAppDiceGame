@@ -26,7 +26,7 @@
     <ImageView
         android:id="@+id/logo"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="172dp"
         app:srcCompat="@drawable/dice_roller_logo" />
 
     <EditText
@@ -57,6 +57,16 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         style="@style/BlackButton"/>
+
+    <EditText
+        android:id="@+id/editTextForgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Forgot Password!"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
     <FrameLayout
         android:id="@+id/fragmentContainer"

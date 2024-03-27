@@ -58,6 +58,7 @@
         <activity android:name="com.example.dicerollapp.UI_elements.Activities.DiceSelectionActivity" />
         <activity android:name="com.example.dicerollapp.UI_elements.Activities.MiniGameActivity" />
         <activity android:name="com.example.dicerollapp.UI_elements.Activities.SettingsActivity" />
+        <activity android:name="com.example.dicerollapp.PasswordResetActivity" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

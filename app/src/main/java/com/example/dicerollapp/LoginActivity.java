@@ -14,6 +14,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.dicerollapp.UI_elements.Activities.SettingsActivity;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.firebase.auth.AuthResult;
@@ -37,6 +38,7 @@ public class LoginActivity extends AppCompatActivity {
     public static String currentUser;
 
     public boolean loggedIn = false ;
+    private EditText forgotPassword;
 
     private static final String TAG = LoginActivity.class.getSimpleName();
 
@@ -54,6 +56,7 @@ public class LoginActivity extends AppCompatActivity {
 
         auth = FirebaseAuth.getInstance();
         mDatabase = FirebaseDatabase.getInstance().getReference("Logged In History");
+        forgotPassword = findViewById(R.id.editTextForgotPassword);
 
         // Set a click listener for the login button
         buttonLogin.setOnClickListener(new View.OnClickListener() {
@@ -77,6 +80,15 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Navigate back to the main page (MainActivity)
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);
+                finish();  // Close the current activity
+            }
+        });
+
+        forgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, PasswordResetActivity.class);
                 startActivity(intent);
                 finish();  // Close the current activity
             }

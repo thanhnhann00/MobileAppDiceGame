@@ -3311,8 +3311,10 @@ id buttonLogin
 id buttonMainMenu
 id buttonMiniGame
 id buttonPanel
+id buttonPrevious
 id buttonQuickPlay
 id buttonRegister
+id buttonReset
 id buttonSelect
 id buttonSettings
 id button_logout
@@ -3418,7 +3420,9 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editEmail
 id editTextEmail
+id editTextForgotPassword
 id editTextPassword
 id editTextUsername
 id edit_query
@@ -3893,6 +3897,7 @@ layout activity_dice_selection
 layout activity_main
 layout activity_main_menu
 layout activity_minigame
+layout activity_password_reset
 layout activity_settings
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
@@ -3920,8 +3925,8 @@ layout fragment_d8_roll
 layout fragment_dice_history
 layout fragment_dice_roll
 layout fragment_dice_selection
-layout fragment_game_rules
 layout fragment_login
+layout fragment_minigame_rules
 layout fragment_minigame_winner
 layout header_layout
 layout list_view_item_row

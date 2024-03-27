@@ -10,7 +10,7 @@
     android:padding="0dp">
 
     <ImageButton
-        android:id="@+id/button_previous"
+        android:id="@+id/buttonPrevious"
         android:background="@android:color/transparent"
         android:layout_width="50dp"
         android:layout_height="50dp"

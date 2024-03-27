@@ -9,14 +9,17 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.dicerollapp.CreateAccountActivity;
 import com.example.dicerollapp.DiceActivity;
 import com.example.dicerollapp.LoginActivity;
 import com.example.dicerollapp.MainActivity;
+import com.example.dicerollapp.MainMenuActivity;
 import com.example.dicerollapp.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -32,6 +35,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class SettingsActivity extends AppCompatActivity {
     private Button deleteAccount;
+    private ImageButton previous;
 
     //private String currentUser;
 
@@ -48,6 +52,17 @@ public class SettingsActivity extends AppCompatActivity {
                 Toast.makeText(SettingsActivity.this, "Account Deleted",Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(SettingsActivity.this, MainActivity.class));
 
+            }
+        });
+
+        previous = findViewById(R.id.buttonPrevious);
+        previous.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Navigate back to the main page (MainActivity)
+                Intent intent = new Intent(SettingsActivity.this, MainMenuActivity.class);
+                startActivity(intent);
+                finish();  // Close the current activity
             }
         });
     }
@@ -82,6 +97,10 @@ public class SettingsActivity extends AppCompatActivity {
                 Log.e("MainActivity", "Database error: " + databaseError.getMessage());
             }
         });
+    }
+
+    public void resetPassword(String email){
+
     }
 }
 

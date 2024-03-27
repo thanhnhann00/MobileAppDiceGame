@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\src\main\AndroidManifest.xml:2:1-32:12
+ADDED from C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\src\main\AndroidManifest.xml:2:1-33:12
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\nhanp\.gradle\caches\transforms-3\a5560e8db1aa3b65a35b064c8e5d78d2\transformed\material-1.11.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\nhanp\.gradle\caches\transforms-3\eecb6a3d3afe4e4c3353e516b18ba25b\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\nhanp\.gradle\caches\transforms-3\419b3a6a8b176c13b800ab156fc0cc8a\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
@@ -101,8 +101,8 @@ ADDED from C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\src\main\AndroidM
 	android:name
 		ADDED from C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\src\main\AndroidManifest.xml:4:19-71
 application
-ADDED from C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\src\main\AndroidManifest.xml:5:5-31:19
-INJECTED from C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\src\main\AndroidManifest.xml:5:5-31:19
+ADDED from C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\src\main\AndroidManifest.xml:5:5-32:19
+INJECTED from C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\src\main\AndroidManifest.xml:5:5-32:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\nhanp\.gradle\caches\transforms-3\a5560e8db1aa3b65a35b064c8e5d78d2\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\nhanp\.gradle\caches\transforms-3\a5560e8db1aa3b65a35b064c8e5d78d2\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\nhanp\.gradle\caches\transforms-3\eecb6a3d3afe4e4c3353e516b18ba25b\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -225,6 +225,10 @@ activity#com.example.dicerollapp.UI_elements.Activities.SettingsActivity
 ADDED from C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\src\main\AndroidManifest.xml:29:9-76
 	android:name
 		ADDED from C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\src\main\AndroidManifest.xml:29:19-74
+activity#com.example.dicerollapp.PasswordResetActivity
+ADDED from C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\src\main\AndroidManifest.xml:30:9-58
+	android:name
+		ADDED from C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\src\main\AndroidManifest.xml:30:19-56
 uses-sdk
 INJECTED from C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\nhanp\StudioProjects\MobileAppDiceGame\app\src\main\AndroidManifest.xml
