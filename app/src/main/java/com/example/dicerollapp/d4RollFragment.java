@@ -182,7 +182,7 @@ public class d4RollFragment extends Fragment implements SensorEventListener{
                                 }
                             }
                             // Add the total of both dice to the history using ViewModel
-                            final String rollResult = "Rolled a d4: " + (dice1);
+                            final String rollResult = "Rolled a D4: " + (dice1);
                             requireActivity().runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {

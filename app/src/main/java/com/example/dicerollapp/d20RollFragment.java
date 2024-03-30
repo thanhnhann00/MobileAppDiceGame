@@ -189,6 +189,7 @@ public class d20RollFragment extends Fragment implements SensorEventListener{
                                     viewModel.addToDiceRollHistory(rollResult);
                                 }
                             });
+                            break;
                         }
                         case (2): {
                             // In the run() method, use a for loop to iterate
@@ -222,6 +223,7 @@ public class d20RollFragment extends Fragment implements SensorEventListener{
                                     viewModel.addToDiceRollHistory(rollResult);
                                 }
                             });
+                            break;
                         }
                         case (3): {
                             // In the run() method, use a for loop to iterate
@@ -258,6 +260,7 @@ public class d20RollFragment extends Fragment implements SensorEventListener{
                                     viewModel.addToDiceRollHistory(rollResult);
                                 }
                             });
+                            break;
                         }
                     }
                 }
