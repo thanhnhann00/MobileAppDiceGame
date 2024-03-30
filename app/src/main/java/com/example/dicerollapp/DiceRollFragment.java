@@ -183,7 +183,7 @@ public class DiceRollFragment extends Fragment implements SensorEventListener{
                         }
                     }
                     // Add the total of both dice to the history using ViewModel
-                    final String rollResult = "Roll " + ": " + (dice1 + dice2);
+                    final String rollResult = "Rolled 2D6: " + dice1 +" + "+ dice2 + " = " + (dice1 + dice2);
                     requireActivity().runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
@@ -215,7 +215,7 @@ public class DiceRollFragment extends Fragment implements SensorEventListener{
                                 }
                             }
                             // Add the total of both dice to the history using ViewModel
-                            final String rollResult = "Roll " + ": " + (dice1);
+                            final String rollResult = "Rolled a D6: " + (dice1);
                             requireActivity().runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
@@ -248,7 +248,7 @@ public class DiceRollFragment extends Fragment implements SensorEventListener{
                                 }
                             }
                             // Add the total of both dice to the history using ViewModel
-                            final String rollResult = "Roll " + ": " + (dice1 + dice2);
+                            final String rollResult = "Rolled 2D6: " + dice1 +" + "+ dice2 + " = " + (dice1 + dice2);
                             requireActivity().runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
@@ -284,7 +284,7 @@ public class DiceRollFragment extends Fragment implements SensorEventListener{
                                 }
                             }
                             // Add the total of both dice to the history using ViewModel
-                            final String rollResult = "Roll " + ": " + (dice1 + dice2 + dice3);
+                            final String rollResult = "Rolled 3D6: " + dice1 +" + "+ dice2 + " + "+ dice3 + " = "  + (dice1 + dice2+ dice3);
                             requireActivity().runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {

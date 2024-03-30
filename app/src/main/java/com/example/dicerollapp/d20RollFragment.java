@@ -182,7 +182,7 @@ public class d20RollFragment extends Fragment implements SensorEventListener{
                                 }
                             }
                             // Add the total of both dice to the history using ViewModel
-                            final String rollResult = "Roll " + ": " + (dice1);
+                            final String rollResult = "Rolled a D20: " + (dice1);
                             requireActivity().runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
@@ -215,7 +215,7 @@ public class d20RollFragment extends Fragment implements SensorEventListener{
                                 }
                             }
                             // Add the total of both dice to the history using ViewModel
-                            final String rollResult = "Roll " + ": " + (dice1 + dice2);
+                            final String rollResult = "Rolled 2D20: " + dice1 + " + " + dice2 + " = "  + (dice1 + dice2);
                             requireActivity().runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
@@ -251,7 +251,7 @@ public class d20RollFragment extends Fragment implements SensorEventListener{
                                 }
                             }
                             // Add the total of both dice to the history using ViewModel
-                            final String rollResult = "Roll " + ": " + (dice1 + dice2 + dice3);
+                            final String rollResult = "Rolled 3D20: " + dice1 +" + "+ dice2 + " + "+ dice3 + " = "  + (dice1 + dice2+ dice3);
                             requireActivity().runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {

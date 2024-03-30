@@ -7,6 +7,7 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -155,7 +156,6 @@ public class d4RollFragment extends Fragment implements SensorEventListener{
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-
                 Bundle args = getArguments();
                 assert args != null;
                 int numDice = args.getInt("numDice");
@@ -182,13 +182,14 @@ public class d4RollFragment extends Fragment implements SensorEventListener{
                                 }
                             }
                             // Add the total of both dice to the history using ViewModel
-                            final String rollResult = "Roll " + ": " + (dice1);
+                            final String rollResult = "Rolled a d4: " + (dice1);
                             requireActivity().runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
                                     viewModel.addToDiceRollHistory(rollResult);
                                 }
                             });
+                            break;
                         }
                         case (2): {
                             // In the run() method, use a for loop to iterate
@@ -215,13 +216,14 @@ public class d4RollFragment extends Fragment implements SensorEventListener{
                                 }
                             }
                             // Add the total of both dice to the history using ViewModel
-                            final String rollResult = "Roll " + ": " + (dice1 + dice2);
+                            final String rollResult = "Rolled 2D4: " + dice1 +" + "+ dice2 + " = " + (dice1 + dice2);
                             requireActivity().runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
                                     viewModel.addToDiceRollHistory(rollResult);
                                 }
                             });
+                            break;
                         }
                         case (3): {
                             // In the run() method, use a for loop to iterate
@@ -251,13 +253,14 @@ public class d4RollFragment extends Fragment implements SensorEventListener{
                                 }
                             }
                             // Add the total of both dice to the history using ViewModel
-                            final String rollResult = "Roll " + ": " + (dice1 + dice2 + dice3);
+                            final String rollResult = "Rolled 3D4: " + dice1 +" + "+ dice2 + " + " + dice3 + " = " + (dice1 + dice2 + dice3);
                             requireActivity().runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
                                     viewModel.addToDiceRollHistory(rollResult);
                                 }
                             });
+                            break;
                         }
                     }
                 }
