@@ -163,19 +163,16 @@ public class DiceRollFragment extends Fragment implements SensorEventListener{
                     // some code to show rolling dice animation
                     int dice1 = 0;
                     int dice2 = 0;
-                    int dice3 = 0;
                     for (int i = 0; i < rollAnimations; i++) {
                         // Generate two random numbers between 1 and 4
                         // and store them in integer variables
                         dice1 = random.nextInt(6) + 1;
                         dice2 = random.nextInt(6) + 1;
-                        dice3 = random.nextInt(6) + 1;
                         // Get the Image ids from diceImages array
                         // using the above random numbers as array-index.
                         // Then, set the ImageViews for die1 and die2 with them.
                         die1.setImageResource(diceImages[dice1 - 1]);
                         die2.setImageResource(diceImages[dice2 - 1]);
-                        die3.setImageResource(diceImages[dice3 - 1]);
 
                         try {
                             // In a try block sleep the thread for a
@@ -186,7 +183,7 @@ public class DiceRollFragment extends Fragment implements SensorEventListener{
                         }
                     }
                     // Add the total of both dice to the history using ViewModel
-                    final String rollResult = "Roll " + ": " + (dice1 + dice2 + dice3);
+                    final String rollResult = "Rolled 2D6: " + dice1 +" + "+ dice2 + " = " + (dice1 + dice2);
                     requireActivity().runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
@@ -218,7 +215,7 @@ public class DiceRollFragment extends Fragment implements SensorEventListener{
                                 }
                             }
                             // Add the total of both dice to the history using ViewModel
-                            final String rollResult = "Roll " + ": " + (dice1);
+                            final String rollResult = "Rolled a D6: " + (dice1);
                             requireActivity().runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
@@ -251,7 +248,7 @@ public class DiceRollFragment extends Fragment implements SensorEventListener{
                                 }
                             }
                             // Add the total of both dice to the history using ViewModel
-                            final String rollResult = "Roll " + ": " + (dice1 + dice2);
+                            final String rollResult = "Rolled 2D6: " + dice1 +" + "+ dice2 + " = " + (dice1 + dice2);
                             requireActivity().runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
@@ -287,7 +284,7 @@ public class DiceRollFragment extends Fragment implements SensorEventListener{
                                 }
                             }
                             // Add the total of both dice to the history using ViewModel
-                            final String rollResult = "Roll " + ": " + (dice1 + dice2 + dice3);
+                            final String rollResult = "Rolled 3D6: " + dice1 +" + "+ dice2 + " + "+ dice3 + " = "  + (dice1 + dice2+ dice3);
                             requireActivity().runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {

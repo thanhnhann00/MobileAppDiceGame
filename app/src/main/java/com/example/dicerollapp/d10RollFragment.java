@@ -182,13 +182,14 @@ public class d10RollFragment extends Fragment implements SensorEventListener{
                                 }
                             }
                             // Add the total of both dice to the history using ViewModel
-                            final String rollResult = "Roll " + ": " + (dice1);
+                            final String rollResult = "Rolled a D10 " + ": " + (dice1);
                             requireActivity().runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
                                     viewModel.addToDiceRollHistory(rollResult);
                                 }
                             });
+                            break;
                         }
                         case (2): {
                             // In the run() method, use a for loop to iterate
@@ -215,13 +216,14 @@ public class d10RollFragment extends Fragment implements SensorEventListener{
                                 }
                             }
                             // Add the total of both dice to the history using ViewModel
-                            final String rollResult = "Roll " + ": " + (dice1 + dice2);
+                            final String rollResult = "Rolled 2D10: " + dice1 + " + " + dice2 + " = " + (dice1 + dice2);
                             requireActivity().runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
                                     viewModel.addToDiceRollHistory(rollResult);
                                 }
                             });
+                            break;
                         }
                         case (3): {
                             // In the run() method, use a for loop to iterate
@@ -251,13 +253,14 @@ public class d10RollFragment extends Fragment implements SensorEventListener{
                                 }
                             }
                             // Add the total of both dice to the history using ViewModel
-                            final String rollResult = "Roll " + ": " + (dice1 + dice2 + dice3);
+                            final String rollResult = "Rolled 3D10: " + dice1 +" + "+ dice2 + " + "+ dice3 + " = "  + (dice1 + dice2+ dice3);
                             requireActivity().runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
                                     viewModel.addToDiceRollHistory(rollResult);
                                 }
                             });
+                            break;
                         }
                     }
                 }
