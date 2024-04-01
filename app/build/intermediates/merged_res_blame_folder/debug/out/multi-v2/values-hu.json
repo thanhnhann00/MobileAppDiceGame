@@ -4,24 +4,7 @@
             "outputFile": "com.example.dicerollapp-mergeDebugResources-37:/values-hu/values-hu.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\nhanp\\.gradle\\caches\\transforms-3\\5524f2823d0f5e89bd3e57b89f7c403c\\transformed\\play-services-basement-18.3.0\\res\\values-hu\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "172",
-                        "endOffsets": "367"
-                    },
-                    "to": {
-                        "startLines": "49",
-                        "startColumns": "4",
-                        "startOffsets": "4853",
-                        "endColumns": "176",
-                        "endOffsets": "5025"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\nhanp\\.gradle\\caches\\transforms-3\\67d539e749cff612140d03584c185c95\\transformed\\core-1.9.0\\res\\values-hu\\values-hu.xml",
+                    "source": "C:\\Users\\nhanp\\.gradle\\caches\\transforms-3\\7cb540ee2e06529cbcdb052530b91977\\transformed\\core-1.9.0\\res\\values-hu\\values-hu.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -38,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\nhanp\\.gradle\\caches\\transforms-3\\a5560e8db1aa3b65a35b064c8e5d78d2\\transformed\\material-1.11.0\\res\\values-hu\\values-hu.xml",
+                    "source": "C:\\Users\\nhanp\\.gradle\\caches\\transforms-3\\e4973361fb2b4a36ffaae8c93fc1cda6\\transformed\\material-1.11.0\\res\\values-hu\\values-hu.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -57,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\nhanp\\.gradle\\caches\\transforms-3\\54ed49bdf41eee5251020f3008fa7b45\\transformed\\play-services-base-18.1.0\\res\\values-hu\\values.xml",
+                    "source": "C:\\Users\\nhanp\\.gradle\\caches\\transforms-3\\79c0bf54e36c8871f93ade369a1675a8\\transformed\\play-services-base-18.1.0\\res\\values-hu\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -74,7 +57,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\nhanp\\.gradle\\caches\\transforms-3\\55aec724fdd97262465e3a2c8558b990\\transformed\\appcompat-1.6.1\\res\\values-hu\\values-hu.xml",
+                    "source": "C:\\Users\\nhanp\\.gradle\\caches\\transforms-3\\9ee614a77f27f358efcddd6ed6a072be\\transformed\\appcompat-1.6.1\\res\\values-hu\\values-hu.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -91,7 +74,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\nhanp\\.gradle\\caches\\transforms-3\\e9738b78d3e3921472bb135eb2951b93\\transformed\\browser-1.4.0\\res\\values-hu\\values-hu.xml",
+                    "source": "C:\\Users\\nhanp\\.gradle\\caches\\transforms-3\\371a8e700577402b8d03301c136e2d8c\\transformed\\play-services-basement-18.3.0\\res\\values-hu\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "172",
+                        "endOffsets": "367"
+                    },
+                    "to": {
+                        "startLines": "49",
+                        "startColumns": "4",
+                        "startOffsets": "4853",
+                        "endColumns": "176",
+                        "endOffsets": "5025"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\nhanp\\.gradle\\caches\\transforms-3\\67ce2bdd166084a7ac22ba73db632783\\transformed\\browser-1.4.0\\res\\values-hu\\values-hu.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

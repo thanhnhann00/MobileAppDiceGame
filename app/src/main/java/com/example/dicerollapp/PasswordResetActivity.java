@@ -34,6 +34,7 @@ public class PasswordResetActivity extends AppCompatActivity{
     private EditText email;
     private Button reset;
     private ImageButton buttonPrevious;
+    private DatabaseReference mDatabase;
     protected void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_password_reset);
@@ -45,7 +46,7 @@ public class PasswordResetActivity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 sendPasswordResetEmail(email);
-                Toast.makeText(PasswordResetActivity.this, "Email Send", Toast.LENGTH_SHORT).show();
+
                 Intent intent = new Intent(PasswordResetActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();  // Close the current activity

@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\nhanp\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\layout_activity_password_reset.xml.flat",
+        "source": "C:\\Users\\nhanp\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\layout\\activity_password_reset.xml"
+    },
+    {
         "merged": "C:\\Users\\nhanp\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\drawable_d82.PNG.flat",
         "source": "C:\\Users\\nhanp\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\drawable\\d82.PNG"
     },
@@ -94,6 +98,10 @@
     {
         "merged": "C:\\Users\\nhanp\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\nhanp\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.dicerollapp-merged_res-39:/layout_activity_edit_profile.xml.flat",
+        "source": "com.example.dicerollapp-main-41:/layout/activity_edit_profile.xml"
     },
     {
         "merged": "C:\\Users\\nhanp\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\drawable_minigame_icon.xml.flat",
@@ -192,6 +200,10 @@
         "source": "C:\\Users\\nhanp\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\drawable\\d81.PNG"
     },
     {
+        "merged": "C:\\Users\\nhanp\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\layout_activity_edit_profile.xml.flat",
+        "source": "C:\\Users\\nhanp\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\layout\\activity_edit_profile.xml"
+    },
+    {
         "merged": "C:\\Users\\nhanp\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\layout_activity_main_menu.xml.flat",
         "source": "C:\\Users\\nhanp\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\layout\\activity_main_menu.xml"
     },
@@ -272,10 +284,6 @@
         "source": "C:\\Users\\nhanp\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\layout\\fragment_minigame_winner.xml"
     },
     {
-        "merged": "com.example.dicerollapp-merged_res-39:/layout_fragment_login.xml.flat",
-        "source": "com.example.dicerollapp-main-41:/layout/fragment_login.xml"
-    },
-    {
         "merged": "C:\\Users\\nhanp\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\drawable_d208.PNG.flat",
         "source": "C:\\Users\\nhanp\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\drawable\\d208.PNG"
     },
@@ -322,10 +330,6 @@
     {
         "merged": "C:\\Users\\nhanp\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\layout_fragment_dice_history.xml.flat",
         "source": "C:\\Users\\nhanp\\.gradle\\daemon\\8.4\\com.example.dicerollapp-main-41:\\layout\\fragment_dice_history.xml"
-    },
-    {
-        "merged": "com.example.dicerollapp-merged_res-39:/layout_activity_password_reset.xml.flat",
-        "source": "com.example.dicerollapp-main-41:/layout/activity_password_reset.xml"
     },
     {
         "merged": "C:\\Users\\nhanp\\.gradle\\daemon\\8.4\\com.example.dicerollapp-merged_res-39:\\drawable_back_button.png.flat",

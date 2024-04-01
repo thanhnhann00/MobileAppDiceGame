@@ -4,7 +4,7 @@
             "outputFile": "com.example.dicerollapp-mergeDebugResources-37:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\nhanp\\.gradle\\caches\\transforms-3\\a5560e8db1aa3b65a35b064c8e5d78d2\\transformed\\material-1.11.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\nhanp\\.gradle\\caches\\transforms-3\\e4973361fb2b4a36ffaae8c93fc1cda6\\transformed\\material-1.11.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\nhanp\\.gradle\\caches\\transforms-3\\55aec724fdd97262465e3a2c8558b990\\transformed\\appcompat-1.6.1\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\nhanp\\.gradle\\caches\\transforms-3\\9ee614a77f27f358efcddd6ed6a072be\\transformed\\appcompat-1.6.1\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

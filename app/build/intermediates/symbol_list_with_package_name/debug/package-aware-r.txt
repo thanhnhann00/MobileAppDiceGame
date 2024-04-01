@@ -3304,6 +3304,7 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id buttonChangeProfile
 id buttonCreateAccount
 id buttonDefaultDices
 id buttonDeleteAccount
@@ -3315,6 +3316,8 @@ id buttonPrevious
 id buttonQuickPlay
 id buttonRegister
 id buttonReset
+id buttonResetPassword
+id buttonSave
 id buttonSelect
 id buttonSettings
 id button_logout
@@ -3421,8 +3424,13 @@ id easeOut
 id east
 id edge
 id editEmail
+id editPhone
+id editTEmail
+id editTName
+id editTPhone
 id editTextEmail
 id editTextForgotPassword
+id editTextName
 id editTextPassword
 id editTextUsername
 id edit_query
@@ -3478,7 +3486,9 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView2
 id imageViewIcon
+id imageViewProfile
 id immediateStop
 id included
 id indeterminate
@@ -3746,7 +3756,11 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvEmail
 id tvHelp
+id tvName
+id tvPhoneNum
+id tvProfile
 id twoDiceRadioButton
 id unchecked
 id uniform
@@ -3894,6 +3908,7 @@ layout abc_tooltip
 layout activity_create_account
 layout activity_dice
 layout activity_dice_selection
+layout activity_edit_profile
 layout activity_main
 layout activity_main_menu
 layout activity_minigame

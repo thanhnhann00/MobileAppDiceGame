@@ -90,6 +90,7 @@ drawable skip_icon
 id ai_dice_imageview
 id ai_dice_layout
 id ai_score_textview
+id buttonChangeProfile
 id buttonCreateAccount
 id buttonDefaultDices
 id buttonDeleteAccount
@@ -100,6 +101,8 @@ id buttonPrevious
 id buttonQuickPlay
 id buttonRegister
 id buttonReset
+id buttonResetPassword
+id buttonSave
 id buttonSelect
 id buttonSettings
 id button_logout
@@ -133,8 +136,13 @@ id die82
 id die83
 id drawer_layout
 id editEmail
+id editPhone
+id editTEmail
+id editTName
+id editTPhone
 id editTextEmail
 id editTextForgotPassword
+id editTextName
 id editTextPassword
 id editTextUsername
 id fragmentContainer
@@ -142,7 +150,9 @@ id header
 id headerImage
 id historyTable
 id imageView
+id imageView2
 id imageViewIcon
+id imageViewProfile
 id largeDice
 id left_drawer
 id logo
@@ -156,7 +166,11 @@ id smallDice
 id textViewName
 id threeDiceRadioButton
 id toolbar
+id tvEmail
 id tvHelp
+id tvName
+id tvPhoneNum
+id tvProfile
 id twoDiceRadioButton
 id user_dice_imageview
 id user_dice_layout
@@ -165,6 +179,7 @@ id winner_textview
 layout activity_create_account
 layout activity_dice
 layout activity_dice_selection
+layout activity_edit_profile
 layout activity_main
 layout activity_main_menu
 layout activity_minigame

@@ -10,32 +10,46 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.dicerollapp.CreateAccountActivity;
 import com.example.dicerollapp.DiceActivity;
+import com.example.dicerollapp.EditProfileActivity;
 import com.example.dicerollapp.LoginActivity;
 import com.example.dicerollapp.MainActivity;
 import com.example.dicerollapp.MainMenuActivity;
 import com.example.dicerollapp.R;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
-import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
 
+import java.util.Set;
 
 
 public class SettingsActivity extends AppCompatActivity {
-    private Button deleteAccount;
+    private Button deleteAccount,changeProfile,resetPassword;
     private ImageButton previous;
+
+    private FirebaseFirestore fStore = FirebaseFirestore.getInstance();
+    final private FirebaseAuth fAuth = FirebaseAuth.getInstance();
+    final private FirebaseUser currentUser = fAuth.getCurrentUser();
+    final private String userID = currentUser.getUid();
+    final DocumentReference DR = fStore.collection("users").document(userID);
+    private TextView name, email, phoneNum;
+
 
     //private String currentUser;
 
@@ -43,19 +57,48 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
+        name = findViewById(R.id.tvName);
+        email = findViewById(R.id.tvEmail);
+        phoneNum = findViewById(R.id.tvPhoneNum);
 
         deleteAccount = findViewById(R.id.buttonDeleteAccount);
-        deleteAccount.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                deleteAccount();
-                Toast.makeText(SettingsActivity.this, "Account Deleted",Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(SettingsActivity.this, MainActivity.class));
+        changeProfile = findViewById(R.id.buttonChangeProfile);
+        resetPassword = findViewById(R.id.buttonResetPassword);
+        previous = findViewById(R.id.buttonPrevious);
 
+
+
+        DR.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
+            @Override
+            public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException error) {
+                    name.setText(documentSnapshot.getString("Name"));
+                    email.setText(documentSnapshot.getString("Email"));
+                    phoneNum.setText(documentSnapshot.getString("Phone Number"));
             }
         });
 
-        previous = findViewById(R.id.buttonPrevious);
+
+
+        changeProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(v.getContext(), EditProfileActivity.class);
+                i.putExtra("Name",name.getText().toString());
+                i.putExtra("Email",email.getText().toString());
+                i.putExtra("Phone Number",phoneNum.getText().toString());
+
+                startActivity(i);
+                finish();
+            }
+        });
+        deleteAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                deleteAccount(userID);
+            }
+        });
+
+
         previous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -67,40 +110,46 @@ public class SettingsActivity extends AppCompatActivity {
         });
     }
 
-    DatabaseReference usersRef = FirebaseDatabase.getInstance().getReference("User Data");
-    private void deleteAccount() {
-        usersRef.orderByChild("email").equalTo(LoginActivity.currentUser).addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (DataSnapshot childSnapshot : dataSnapshot.getChildren()) {
-                    String userKey = childSnapshot.getKey();
-                    // Delete user node
-                    usersRef.child(userKey).removeValue().addOnSuccessListener(new OnSuccessListener<Void>() {
-                        @Override
-                        public void onSuccess(Void aVoid) {
-                            // User deleted successfully
-                            Log.d("MainActivity", "User deleted successfully");
-                        }
-                    }).addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
-                            // Failed to delete user
-                            Log.e("MainActivity", "Error deleting user", e);
-                        }
-                    });
-                }
-            }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-                // Error handling
-                Log.e("MainActivity", "Database error: " + databaseError.getMessage());
-            }
-        });
+    public void deleteAccount(String id) {
+        String nt = id;
+        FirebaseFirestore fsStore = FirebaseFirestore.getInstance();
+        currentUser.delete()
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void unused) {
+                        // User deleted successfully from Firebase Authentication
+                        // Now, delete associated data in Firebase Firestore
+                        DocumentReference DR = fsStore.collection("users").document(nt);
+                        DR.delete()
+                                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                    @Override
+                                    public void onSuccess(Void aVoid) {
+                                        // Document deleted successfully from Firebase Firestore
+                                        Toast.makeText(SettingsActivity.this, "Delete Successful", Toast.LENGTH_SHORT).show();
+
+                                    }
+                                }).addOnFailureListener(new OnFailureListener() {
+                                    @Override
+                                    public void onFailure(@NonNull Exception e) {
+                                        Toast.makeText(SettingsActivity.this, "Delete Fail", Toast.LENGTH_SHORT).show();
+                                    }
+                                });
+
+                        startActivity(new Intent(SettingsActivity.this, MainActivity.class));
+                        finish();
+
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(SettingsActivity.this,"Delete Fail",Toast.LENGTH_SHORT).show();
+                    }
+                });
     }
 
-    public void resetPassword(String email){
 
-    }
+
+
 }
 
